@@ -14,11 +14,11 @@ class App
         {
             if ((a > b) & (c > b))
             { 
-                Console.WriteLine("Количество локальных минмумов равно: " + 1);
+                Console.WriteLine("Количество локальных минимумов равно: " + 1);
             }
             else
             {
-                Console.WriteLine("Количество локальных минмумов равно: " + 0);
+                Console.WriteLine("Количество локальных минимумов равно: " + 0);
             }
         }
         else
@@ -38,7 +38,7 @@ class App
                     count++;
                 }
             }
-        Console.WriteLine("Количество локальных минмумов равно: " + count);
+        Console.WriteLine("Количество локальных минимумов равно: " + count);
         }
     }
 }
