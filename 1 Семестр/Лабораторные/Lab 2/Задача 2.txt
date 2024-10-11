@@ -1,0 +1,53 @@
+using System;
+class App
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите количество элементов:");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int trueLength = 1;
+        int minLength = 999999999;
+        if (n >= 2)
+        {
+            Console.WriteLine("Вводите элементы:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a == b)
+            {
+                trueLength += 1;
+            }
+            else
+            {
+                if (trueLength < minLength)
+                {
+                    minLength = trueLength;
+                }
+                trueLength = 1;
+            }
+            n = n - 2;
+            while (n > 0)
+            {
+                a = b;
+                b = Convert.ToInt32(Console.ReadLine());
+                if (a == b)
+                {
+                    trueLength += 1;
+                }
+                else
+                {
+                    if (trueLength < minLength)
+                    {
+                        minLength = trueLength;
+                    }
+                    trueLength = 1;
+                }
+                n = n - 1;
+            }
+            if (trueLength < minLength)
+            {
+                minLength = trueLength;
+            }
+            Console.WriteLine($"Минимальная длина последовательности из одинаковых элементов равна: {minLength}");
+        }
+    }
+}

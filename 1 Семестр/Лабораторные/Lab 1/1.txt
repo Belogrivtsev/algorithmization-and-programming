@@ -1,0 +1,19 @@
+using System;
+using System;
+public class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите 2 переменные");
+        var a = Convert.ToInt32(Console.ReadLine());
+        var b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"b = {b}");
+        a = a + b;
+        b = b - a;
+        b = -b;
+        a = a - b;
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"b = {b}");
+    }
+}

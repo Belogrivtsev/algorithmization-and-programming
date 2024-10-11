@@ -1,0 +1,14 @@
+using System;
+
+public class App
+{
+    public static void Main()
+    {
+        var p = 5;
+        var m = 3;
+        var l = 3;
+        var n = 2;
+        var path = ((p*n*2) + (l*(n-1)*2) + (n*(2*l) + n*(2*m)));
+        Console.WriteLine(path);
+    }
+}

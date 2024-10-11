@@ -1,0 +1,21 @@
+using System;
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Введите количество чисел:");
+            var n = Convert.ToInt32(Console.ReadLine());
+            int counter = 0;
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Введите число:");
+                int N = Convert.ToInt32(Console.ReadLine());
+                if (Math.Abs(N) % 10 == 3)
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine("Количество чисел, которые оканчиваются на 3:");
+            Console.WriteLine(counter);
+        }
+    }

@@ -1,0 +1,29 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите количество элементов (больше двух)");
+        var n = Convert.ToInt32(Console.ReadLine());
+        var previousX = 0;
+        int minL = 0;
+        int maxL = 1000000;
+        Console.WriteLine("Вводите элементы");
+        for (int i = 0; i < n; i++)
+        {
+            var x = Convert.ToInt32(Console.ReadLine());
+            previousX = x;
+            if (x == previousX)
+            {
+                minL = minL + 1;
+            }
+            else
+            {
+                minL = Math.Min(minL, maxL);
+                maxL = minL;
+            }
+        }
+        Console.WriteLine(Math.Min(minL, maxL));
+    }
+}

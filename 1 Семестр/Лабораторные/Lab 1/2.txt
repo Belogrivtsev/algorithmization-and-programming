@@ -1,0 +1,12 @@
+using System;
+
+public class App
+{
+    public static void Main()
+    {
+        var x = Convert.ToInt32(Console.ReadLine());
+        var y = Convert.ToInt32(Console.ReadLine());
+        var maximum = ((x + y) + Math.Abs(y - x)) / 2;
+        Console.WriteLine(maximum);
+    }
+}

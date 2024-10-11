@@ -1,0 +1,35 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите количество элементов");
+        var n = Convert.ToInt32(Console.ReadLine());
+        var minSum = 0;
+        var maxSum = 0;
+        Console.WriteLine("Вводите элементы");
+        for (int i = 0; i < n; i++)
+        {
+            var x = Convert.ToInt32(Console.ReadLine());
+            if (Math.Abs(x) % 2 == 0)
+            {
+                maxSum = maxSum + x;
+            }
+            else
+            {
+                if (minSum < maxSum)
+                {
+                    minSum = maxSum;
+                }
+                if (maxSum > 0)
+                {
+                    maxSum = 0;
+                }
+            }
+            Console.WriteLine("test1 " + maxSum + " " + minSum);
+        }
+        Console.WriteLine("Максимальная сумма чётных элементов равна:");
+        Console.WriteLine(Math.Max(minSum, maxSum));
+        }
+}
