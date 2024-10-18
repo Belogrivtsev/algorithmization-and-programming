@@ -1,0 +1,42 @@
+using System;
+class App
+{
+    static void Main()
+    {
+        while (true)
+        {
+            Console.WriteLine("Введите положительное число");
+            var x = Convert.ToInt32(Console.ReadLine());
+            var count = 0;
+            int result = 0;
+            if (x <= 0)
+            {
+                Console.WriteLine("Было введено отрицательное число или 0, работа завершена");
+                break;
+            }
+            else
+            {
+                while (x != 0)
+                {
+                    var a = x % 10;
+                    x = x / 10;
+                    if (a % 2 ==0)
+                    {
+                        result = result * 10 + a;
+                        count++;
+                    }
+                }
+                
+            }
+            if (count == 0)
+            {
+                Console.WriteLine("Нет чётных цифр");
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+
+        }
+    }
+}
