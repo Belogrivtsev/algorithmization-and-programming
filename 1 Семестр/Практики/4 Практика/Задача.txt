@@ -1,0 +1,36 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+Console.WriteLine("Ведите количество элементов массива:");
+var n = Convert.ToInt32(Console.ReadLine());
+int[] list = new int[n];
+App.Main(list);
+App.WorkWithList(list);
+App.EndOfWork(list);
+class App
+{
+    public static void Main(int[] list)
+    {
+        Console.WriteLine("Вводите элементы");
+        for (int i = 0; i < list.Length; i++)
+        {
+            var x = Convert.ToInt32(Console.ReadLine());
+            list[i] = x;
+        }
+    }
+    public static void WorkWithList(int[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            list[i] = list[i] * list[i];
+        }
+    }
+    public static void EndOfWork(int[] list)
+    {
+        Console.WriteLine("Обработанный массив:");
+        for (int i = 0; i < list.Length; i++)
+        {
+            Console.WriteLine(list[i]);
+
+        }
+    }
+}
