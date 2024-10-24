@@ -27,7 +27,6 @@ class App
                     maxSum = 0;
                 }
             }
-            Console.WriteLine("test1 " + maxSum + " " + minSum);
         }
         Console.WriteLine("Максимальная сумма чётных элементов равна:");
         Console.WriteLine(Math.Max(minSum, maxSum));
