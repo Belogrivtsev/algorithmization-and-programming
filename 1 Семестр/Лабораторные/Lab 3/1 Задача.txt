@@ -6,7 +6,7 @@ class App
     {
         Console.WriteLine("Введите количество элементов (больше двух)");
         var n = Convert.ToInt32(Console.ReadLine());
-        var minLength = -100;
+        var minLength = 0;
         var maxLength = 0;
         Console.WriteLine("Вводите элементы");
         for (int i = 0; i < n; i++)
@@ -18,7 +18,7 @@ class App
             }
             else
             {
-                minLength = Math.Min(minLength, maxLength);
+                minLength = Math.Max(minLength, maxLength);
                 maxLength = 0; 
             }
         }
