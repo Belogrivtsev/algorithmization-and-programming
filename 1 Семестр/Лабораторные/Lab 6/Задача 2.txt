@@ -1,0 +1,69 @@
+using System;
+
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите размерность массива (nXm):");
+        var n = Convert.ToInt32 (Console.ReadLine());
+        var m = Convert.ToInt32 (Console.ReadLine());
+        int[,] list = new int[n, m];
+        var countString = 1;
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Вводите элементы {countString} строки:");
+            countString++;
+            for (int j = 0; j < m; j++)
+            {
+                var x = Convert.ToInt32 (Console.ReadLine());
+                list[i, j] = x;
+            }
+        }
+        var StringCnt = 1;
+        Console.WriteLine();
+        Console.WriteLine("Изначальный массив:");
+        for (int i = 0; i < n ; i++)
+        {
+            Console.WriteLine($"Строка {StringCnt}:");
+            StringCnt++;
+            for (int j = 0; j < m ; j++)
+            {
+                Console.WriteLine(String.Format("{0,3}", list[i, j]));
+            }
+        }
+        StringCnt = 1;
+        for (int i = 0;i < n; i++)
+        {
+            var max = list[i, 0];
+            var min = list[i, 0];
+            int maxIn = 0, minIn = 0, cnt = 0;
+            for (int j = 0; j < m; j++)
+            {
+                if (list[i, j] < min)
+                {
+                    min = list[i, j];
+                    minIn = j;
+                }
+                else if (list[i, j] > max)
+                {
+                    max = list[i, j];
+                    maxIn = j;
+                }
+            }
+            cnt = list[i, minIn];
+            list[i, minIn] = list[i, maxIn];
+            list[i, maxIn] = cnt;
+        }
+        Console.WriteLine();
+        Console.WriteLine("Обработанный массив:");
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Строка {StringCnt}:");
+            StringCnt++;
+            for (int j = 0; j < m; j++)
+            {
+                Console.WriteLine(String.Format("{0,3}", list[i, j]));
+            }
+        }
+    }
+}

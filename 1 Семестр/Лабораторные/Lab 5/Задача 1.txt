@@ -1,0 +1,35 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите длину массива:");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] list = new int[n];
+        Console.WriteLine("Вводите элементы");
+        for (int i = 0; i < n; i++)
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            list[i] = x;
+        }
+        var condition = list[1] - list[0];
+        var flag = 1;
+        for (int i = 0;i < n - 1; i++)
+        {
+            if ((list[i+1] - list[i]) != condition)
+            {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 0)
+        {
+            Console.WriteLine("Нет, последовательность не равномерно возрастающая");
+        }
+        else
+        {
+            Console.WriteLine("Да, последовательность равномерно возрастающая");
+        }
+    }
+}

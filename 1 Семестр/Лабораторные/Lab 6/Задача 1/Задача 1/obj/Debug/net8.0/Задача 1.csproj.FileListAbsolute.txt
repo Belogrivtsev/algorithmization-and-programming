@@ -1,0 +1,15 @@
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.AssemblyInfoInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.AssemblyInfo.cs
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.csproj.CoreCompileInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.sourcelink.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\bin\Debug\net8.0\Задача 1.exe
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\bin\Debug\net8.0\Задача 1.deps.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\bin\Debug\net8.0\Задача 1.runtimeconfig.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\bin\Debug\net8.0\Задача 1.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\bin\Debug\net8.0\Задача 1.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\refint\Задача 1.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\Задача 1.genruntimeconfig.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 6\Задача 1\Задача 1\obj\Debug\net8.0\ref\Задача 1.dll

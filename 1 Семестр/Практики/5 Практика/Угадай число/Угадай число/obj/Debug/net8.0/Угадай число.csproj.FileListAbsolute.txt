@@ -1,0 +1,15 @@
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\bin\Debug\net8.0\Угадай число.exe
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\bin\Debug\net8.0\Угадай число.deps.json
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\bin\Debug\net8.0\Угадай число.runtimeconfig.json
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\bin\Debug\net8.0\Угадай число.dll
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\bin\Debug\net8.0\Угадай число.pdb
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.AssemblyInfoInputs.cache
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.AssemblyInfo.cs
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.csproj.CoreCompileInputs.cache
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.sourcelink.json
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.dll
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\refint\Угадай число.dll
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.pdb
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\Угадай число.genruntimeconfig.cache
+D:\Repositoriy\1 Семестр\Практики\5 Практика\Угадай число\Угадай число\obj\Debug\net8.0\ref\Угадай число.dll

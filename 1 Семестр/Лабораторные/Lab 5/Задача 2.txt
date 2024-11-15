@@ -1,0 +1,90 @@
+using System;
+using System.Diagnostics.Metrics;
+using System.Security.Cryptography.X509Certificates;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите длину массива:");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] list = new int[n];
+        Console.WriteLine("Вводите элементы");
+        //кол-во каждых элементов
+        int countP = 0;
+        int countN = 0;
+        int countZ = 0;
+        for (int i = 0; i < n; i++)
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            list[i] = x;
+            if (x == 0)
+            {
+                countZ++;
+            }
+            if (x > 0)
+            {
+                countP++;
+            }
+            if (x < 0)
+            {
+                countN++;
+            }
+        }
+        Console.WriteLine("Изначальный массив:");
+        var test = string.Join(" ", list);
+        Console.WriteLine(test);
+        //Console.WriteLine($"Тестирование: {countN} {countZ} {countP}");
+        ///
+        int[] zeroes = new int[countZ];
+        int[] positive = new int[countP];
+        int[] negative = new int[countN];
+        var counter = 0;
+        ///
+        if (countZ != 0)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (list[i] == 0)
+                {
+                    zeroes[counter] = list[i];
+                    counter++;
+                }
+            }
+        }
+        counter = 0;
+        if (countP != 0)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (list[i] > 0)
+                {
+                    positive[counter] = list[i];
+                    counter++;
+                }
+            }
+        }
+        counter = 0;
+        if (countN != 0)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (list[i] < 0)
+                {
+                    negative[counter] = list[i];
+                    counter++;
+                }
+            }
+        }
+        int[] result1 = negative.Concat(zeroes).ToArray();
+        int[] result2 = result1.Concat(positive).ToArray();
+        //var test1 = string.Join(" ", negative);
+        //var test2 = string.Join(" ", zeroes);
+        //var test3 = string.Join(" ", positive);
+        var result = string.Join(" ", result2);
+        Console.WriteLine("Обработанный масив:");
+        //Console.WriteLine(test1);
+        //Console.WriteLine(test2);
+        //Console.WriteLine(test3);
+        Console.WriteLine(result);
+    }
+}

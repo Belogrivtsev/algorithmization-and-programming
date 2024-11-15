@@ -1,0 +1,90 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography;
+class GGG
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите размерность массива:(nXm)");
+        var n = Convert.ToInt32(Console.ReadLine());
+        var m = Convert.ToInt32(Console.ReadLine());
+        int[,] list = new int[n, m];
+        ///кол-во нулей
+        var countZ = 0;
+        ///счётчики для сравнения
+        var c1 = 0;
+        var c2 = 1;
+        var c3 = 2;
+        int[] common = new int[n * 3];
+        var StringCounter = 1;
+        for (int i = 0; i < n; i++)
+        {
+            var sum = 0;
+            var multi = 1;
+            Console.WriteLine($"Вводите элементы строки {StringCounter}");
+            StringCounter++;
+            for (int j = 0; j < m; j++)
+            {
+                list[i, j] = Convert.ToInt32(Console.ReadLine());
+                sum += list[i, j];
+                multi *= list[i, j];
+                if (list[i, j] == 0)
+                {
+                    countZ += 1;
+                }
+                //кол-во нулей
+            }
+            common[c1] = sum;
+            common[c2] = multi;
+            common[c3] = countZ;
+            //Console.WriteLine("Найденные данные: (сумма, произведение и кол-во нулей)");
+            //Console.WriteLine($"{sum}, {multi}, {countZ}");
+            c1 = c1 + 3;
+            c2 = c2 + 3;
+            c3 = c3 + 3;
+            countZ = 0;
+            sum = 0;
+            multi = 1;
+        }
+        var countS1 = 1;
+        var countS2 = 2;
+        var countStr = 1;
+        //Console.WriteLine(string.Join(" ", common));
+        if (common.Length > 3)
+        {
+            //Console.WriteLine($"Длина списка {common.Length}");
+            for (int i = 0; i < (n * 3) - 3; i = i + 3)
+            {
+                var a1 = common[i];
+                var a2 = common[i + 1];
+                var a3 = common[i + 2];
+                countStr = countS1 * 3;
+                //Console.WriteLine($"{a1} {a2} {a3}");
+                for (int j = 3; j < n * 3; j = j + 3)
+                {
+                    if (countS2 > (common.Length / 3))
+                    {
+                        break;
+                    }
+                    var b1 = common[countStr];
+                    var b2 = common[countStr + 1];
+                    var b3 = common[countStr + 2];
+                    //Console.WriteLine($"{b1} {b2} {b3}");
+                    if (a1 == b1 & a2 == b2 & a3 == b3)
+                    {
+                        Console.WriteLine($"Строка {countS1} равна строке {countS2}");
+                    }
+                    countS2 += 1;
+                    countStr += 3;
+                }
+                //Console.WriteLine($"Конец сравнения строки {countS1}");
+                countS1 += 1;
+                countS2 = countS1 + 1;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Error: невозможно сравнить строки, поскольку размерность 1Xm");
+        }
+    }
+}
