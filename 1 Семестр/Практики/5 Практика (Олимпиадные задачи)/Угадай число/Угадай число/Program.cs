@@ -1,0 +1,98 @@
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.Metrics;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите количество действий:");
+        var n = Convert.ToInt32(Console.ReadLine());
+        //список действий
+        string[] moves = new string[n];
+        //список циф
+        int[] numbers = new int[n];
+        //список иксов
+        int[] exes = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            //цикл ввода действий и переменных
+            Console.WriteLine("Введите арифметическую операцию, а затем число (если вводите Х, то операцией может быть только + или -):");
+            var move = Convert.ToString(Console.ReadLine());
+            var x = Convert.ToString(Console.ReadLine());
+            if (x == "x")
+            {
+                exes[i] = 1;  //добавление коэфициентов при Х
+                moves[i] = move;
+            }
+            else
+            {
+                moves[i] = move; //добавление действия с коэфициентом
+                numbers[i] = Int32.Parse(x); //добавление коэфициента
+            }
+
+        }
+        //добавляем коэфициенты по которым и будет производится вычисление х
+        double resultX = 1;
+        double integerCoeficient = 0;
+
+        for (int i = 0; i < moves.Length; i++)
+        {
+            var moveInt = moves[i];
+            var NumInt = numbers[i];
+            var NumX = exes[i];
+            if (NumX == 0) // понимаем то, что действие производится с константой, а с не с х
+            {
+                if (moveInt == "+")
+                {
+                    integerCoeficient += NumInt;
+                }
+                if (moveInt == "-")
+                {
+                    integerCoeficient -= NumInt;
+                }
+                if (moveInt == "*")
+                {
+                    integerCoeficient *= NumInt;
+                    resultX *= NumInt;
+                }
+            }
+            else // понимаем, что действвие производистся с х
+            {
+                if (moveInt == "+")
+                {
+                    resultX += NumX;
+                }
+                if (moveInt == "-")
+                {
+                    resultX -= NumX;
+                }
+            }
+        }
+        //объявляем R
+        Console.WriteLine("Введите число, которое должно быть получено в качестве результата (убедитесь, что загаданное число может существовать)");
+        double R = Convert.ToDouble(Console.ReadLine());
+        //учитываем случаи, когда уравнение может быть без решений
+        if (resultX == 0 && integerCoeficient != R)
+        {
+            Console.WriteLine("Ошибка: загаданное число не может быть получено набранным набором действий");
+        }
+        else if (resultX == 0 && integerCoeficient == R)
+        {
+            Console.WriteLine($"Загаданное число равно {R}");
+        }
+        else
+        {
+            var result = (R -  integerCoeficient) / resultX;
+            Console.WriteLine($"Загаданное число равно {result}");
+        }
+        //Тесты
+        Console.WriteLine();
+        Console.WriteLine("Всё с иксами:");
+        Console.WriteLine(String.Join(" ", exes));
+        Console.WriteLine(String.Join(" ", moves));
+        Console.WriteLine("Всё с числами:");
+        Console.WriteLine(String.Join(" ", numbers));
+        Console.WriteLine(String.Join(" ", moves));
+    }
+
+}
