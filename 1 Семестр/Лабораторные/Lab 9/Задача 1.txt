@@ -1,0 +1,110 @@
+using System;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine($"Введите исходную строку:");
+        string Str = Convert.ToString(Console.ReadLine());
+        var threeCounter = 0; // счётчик, уведомляющий о том, что была собрана тройка
+        var maxLength = 0;
+        string hollowStr = ""; 
+        string currentChar = "0";
+        for (int i = 0; i < Str.Length; i++)
+        {
+            if (threeCounter == 0) // только начинаем собирать подпоследовательность
+            {
+                if (Convert.ToString(Str[i]) == "X")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                    }
+                }
+                else if (Convert.ToString(Str[i]) == "Y" && currentChar == "X")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                    }
+                }
+                else if (Convert.ToString(Str[i]) == "Z" && currentChar == "Y")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                        threeCounter++;
+                    }
+                }
+                else
+                {
+                    if (currentChar == "X")
+                    {
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                        hollowStr = "";
+                    }
+                    else
+                    {
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        hollowStr = "";
+                    }
+                }
+            }
+            else if (threeCounter > 0) // тройка собрана
+            {
+                if (Convert.ToString(Str[i]) == "X" && currentChar == "Z")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                    }
+                }
+                else if (Convert.ToString(Str[i]) == "Y" && currentChar == "X")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                    }
+                }
+                else if (Convert.ToString(Str[i]) == "Z" && currentChar == "Y")
+                {
+                    if (currentChar != Convert.ToString(Str[i]))
+                    {
+                        hollowStr += Convert.ToString(Str[i]);
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                        threeCounter++;
+                    }
+                }
+                else
+                {
+                    if (currentChar == "X")
+                    {
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        currentChar = Convert.ToString(Str[i]);
+                        hollowStr = "";
+                        threeCounter = 0;
+                    }
+                    else
+                    {
+                        maxLength = Math.Max(maxLength, hollowStr.Length);
+                        hollowStr = "";
+                        threeCounter = 0;
+                    }
+                }
+            }
+            //Console.WriteLine(hollowStr);
+        }
+        Console.WriteLine($"Максимальная длина подпоследовательности XYZ равна {maxLength}");
+    }
+}

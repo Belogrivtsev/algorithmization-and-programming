@@ -1,0 +1,66 @@
+using System;
+using System.Diagnostics.Metrics;
+Console.WriteLine("Крестьянини и чёрт");
+Console.WriteLine("Введите число, равное максимальному стартовому количеству денег у крестьянина:");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Начинаем перебор...");
+// количество денег, которое будет забирать чёрт (не может быть равно n) должно быть больше n на 1, как минимум, иначе будет бесконечный цикл, либо крестьянин:
+int k = 0; //n будет в плюсе
+// количество переходов: 
+int z = 0;
+// начало вычислений:
+if (n == 0)
+{
+    Console.WriteLine("0 монет со страта... на что вы рассчитываете? :))");
+}
+int countForFor = 1; //счётчик для цикла, чтобы производить все действия с i
+int NotTrueN = 1; //заглушка для n
+for (int i = 1; countForFor != n + 1; i++) // основной цикл (идёт до тех пор, пока i не станет равно максимальному количеству денег, то есть n) 
+{
+    // i = n
+    var count = 0;
+    // очевидно, что k имеет смысл проверять до тех пор пока оно не станет больше n более чем в 2 раза
+    for (int j = i + 1; j <= i * 2 ; j++) // фактические условия о том, что как только k = n * 2 + 1, то перебор k для данного n отключается
+    {
+        Console.WriteLine($"{i} {j}");
+        // j = k
+        var DoCounter = 0; // счётчик, чтобы понимать, что программа зациклилась
+        while (i != 0)
+        {
+                                                              //Console.WriteLine("Первый i");
+                                                              //Console.WriteLine(i);
+            i *= 2; // удвоение монет крестьяниа
+                                                              //Console.WriteLine("Второй i");
+                                                              //Console.WriteLine(i);
+            i -= j; // чёрт забирает деньги
+                                                              //Console.WriteLine("Третий i");
+                                                              //Console.WriteLine(i);
+            if (i < 0)
+            {
+                Console.WriteLine("testing4");
+                break;
+            }
+            else
+            {
+                z += 1; //переход засчитывается
+                DoCounter++;
+            }
+            if (DoCounter == 100)
+            {
+                Console.WriteLine("Бесконечный цикл");
+                break;
+            }
+            //break;
+            
+        }
+        k = j;
+        Console.WriteLine("                      N K Z");
+        Console.WriteLine($"Подходящая комбинация {NotTrueN} {k} {z}");
+        z = 0; // обнуление переходов
+        //break;
+    }
+    i = NotTrueN;
+    NotTrueN++;
+    countForFor++;
+    //break;
+}

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Зельеварение\\Зельеварение\\Зельеварение\\Зельеварение.csproj",
+      "projectUniqueName": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Зельеварение\\Зельеварение\\Зельеварение\\Зельеварение.csproj",
       "projectName": "Зельеварение",
-      "projectPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Зельеварение\\Зельеварение\\Зельеварение\\Зельеварение.csproj",
+      "projectPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Зельеварение\\Зельеварение\\Зельеварение\\Зельеварение.csproj",
       "packagesPath": "C:\\Users\\nucle\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Зельеварение\\Зельеварение\\Зельеварение\\obj\\",
+      "outputPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Зельеварение\\Зельеварение\\Зельеварение\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Угадай число")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ca46c1ec6e66093d0d2a256592365eb6f5bc9e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34886ab988cf3065ecd623a0f8bd9426ba52c99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Угадай число")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Угадай число")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,15 @@
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\bin\Debug\net8.0\Lab 9.exe
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\bin\Debug\net8.0\Lab 9.deps.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\bin\Debug\net8.0\Lab 9.runtimeconfig.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\bin\Debug\net8.0\Lab 9.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\bin\Debug\net8.0\Lab 9.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.AssemblyInfoInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.AssemblyInfo.cs
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.csproj.CoreCompileInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.sourcelink.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\refint\Lab 9.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\Lab 9.genruntimeconfig.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 9\Lab 9\obj\Debug\net8.0\ref\Lab 9.dll

@@ -1,0 +1,70 @@
+using System;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите строку:");
+        string str = Convert.ToString(Console.ReadLine());
+        while (str.Contains("  "))
+        {
+            str = str.Replace("  ", " ");
+        }
+        if (str[0] == ' ')
+        {
+            str = str.Remove(0, 1); //удаление первого пробела
+        }
+        Console.WriteLine($"Обработанная строка: {str}");
+        //
+        char[] consonantLetters1 = ['B','b','C','c','D','d','F','f','G','g','H','h','J','j','K','k','L','l','M','m']; //согласные 1
+        char[] consonantLetters2 = ['N','n','P','p','Q','q','R','r','S','s','T','t','V','v','W','w','X','x','Z','z']; //согласные 2
+        char[] vowelLetters = ['A','a','E','e','I','i','O','o','U','u','Y','y']; //гласные
+        int consLetterCount = 0;
+        int voweLetterCount = 0;
+        string oneWord = "";
+        str += " "; //заглушка для цикла
+        int wordsCount = 0;
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (str[i] != ' ')
+            {
+                oneWord += Convert.ToString(str[i]); //собираем отдельные слова из исходной строки, пока не найдём пробел (разделитель слов) 
+            }
+            else
+            {
+                for (int j = 0; j < oneWord.Length; j++) //начинаем бежать по каждой букве в полученном слове
+                {
+                    foreach (char x in consonantLetters1) //проверяем является ли буква согласной1
+                    {
+                        if (oneWord[j] == x)
+                        {
+                            consLetterCount++;
+                        }
+                    }
+                    foreach (char x in consonantLetters2) //проверяем является ли буква согласной2
+                    {
+                        if (oneWord[j] == x)
+                        {
+                            consLetterCount++;
+                        }
+                    }
+                    foreach (char x in vowelLetters) //проверяем является ли буква гласной
+                    {
+                        if (oneWord[j] == x)
+                        {
+                            voweLetterCount++;
+                        }
+                    }
+                }
+                if (consLetterCount < voweLetterCount) //основная проверка
+                {
+                    wordsCount++;
+                }
+                //Console.WriteLine($"Гласные, согласные: {voweLetterCount} {consLetterCount}");
+                oneWord = "";
+                consLetterCount = voweLetterCount = 0;
+            }
+        }
+        Console.WriteLine($"Количество слов, где количество согласных букв меньше количества гласных равно {wordsCount}");
+    }
+}
+        

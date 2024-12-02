@@ -53,7 +53,7 @@ class App
                 if (moveInt == "*")
                 {
                     integerCoeficient *= NumInt;
-                    resultX *= NumInt;
+                    resultX *= NumInt; // (x + 0) * 2 = 2x или (x + 1 + 3 - 10) * 3 = 3x + 3 + 9 - 30
                 }
             }
             else // понимаем, что действвие производистся с х

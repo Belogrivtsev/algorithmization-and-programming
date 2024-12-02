@@ -1,0 +1,19 @@
+using System;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите строку:");
+        string str = Convert.ToString(Console.ReadLine());
+        Console.WriteLine($"Исходная строка: {str}");
+        while (str.Contains("  "))
+        {
+            str = str.Replace("  ", " ");
+        }
+        if (str[0] == ' ')
+        {
+            str = str.Remove(0, 1); //удаление первого пробела
+        }
+        Console.WriteLine($"Обработанная строка: {str}");
+    }
+}

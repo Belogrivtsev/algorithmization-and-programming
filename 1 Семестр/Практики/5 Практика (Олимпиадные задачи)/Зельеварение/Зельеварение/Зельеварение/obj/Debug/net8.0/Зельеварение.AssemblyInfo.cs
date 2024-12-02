@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Зельеварение")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bdc4fc222b9069fa6f288f0e5d1321673f19538")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34886ab988cf3065ecd623a0f8bd9426ba52c99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Зельеварение")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Зельеварение")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
