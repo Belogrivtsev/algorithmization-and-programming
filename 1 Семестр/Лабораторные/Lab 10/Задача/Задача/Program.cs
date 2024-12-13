@@ -1,0 +1,78 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+class App
+{
+    public int a { get; set; }
+    public int b { get; set; }
+    public App()
+    {
+        this.a = 0;
+        this.b = 0;
+    }
+    public App(int a)
+    {
+        this.a = a;
+        this.b = 0;
+    }
+    public App(int a, int b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+    public int Sum()
+    {
+        return this.a + this.b;
+    }
+    public int Multi()
+    {
+        return this.a * this.b;
+    }
+    public int Dif()
+    {
+        return this.a - this.b;
+    }
+    public string Div()
+    {
+        if (this.b == 0)
+        {
+            return "Делить на 0 нельзя";
+        }
+        else
+        {
+            return ($"{(this.a*1.0) / this.b}");
+        }
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Введите один аргумент для второго объекта:");
+        int Argument1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите два аргумента для третьего объекта:");
+        int Argument2 = Convert.ToInt32(Console.ReadLine());
+        int Argument3 = Convert.ToInt32(Console.ReadLine());
+////////////////////////////////////////////////////////////////////////////////////////////////////
+        App first = new App();
+        App second = new App(Argument1);
+        App third = new App(Argument2, Argument3);
+        Console.WriteLine();
+        Console.WriteLine("Для первого объекта:");
+        Console.WriteLine(first.Sum());
+        Console.WriteLine(first.Dif());
+        Console.WriteLine(first.Multi());
+        Console.WriteLine(first.Div());
+        Console.WriteLine();
+        Console.WriteLine("Для второго объекта:");
+        Console.WriteLine(second.Sum());
+        Console.WriteLine(second.Dif());
+        Console.WriteLine(first.Multi());
+        Console.WriteLine(second.Div());
+        Console.WriteLine();
+        Console.WriteLine("Для третьего объекта:");
+        Console.WriteLine(third.Sum());
+        Console.WriteLine(third.Dif());
+        Console.WriteLine(third.Multi());
+        Console.WriteLine(third.Div());
+
+    }
+}

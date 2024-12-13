@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repositoriy\\1 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab 10\\\u0417\u0430\u0434\u0430\u0447\u0430\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{981A9917-33E2-4A9B-96A2-38FEC800325D}|\u0417\u0430\u0434\u0430\u0447\u0430\\\u0417\u0430\u0434\u0430\u0447\u0430.csproj|d:\\repositoriy\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\lab 10\\\u0437\u0430\u0434\u0430\u0447\u0430\\\u0437\u0430\u0434\u0430\u0447\u0430\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{981A9917-33E2-4A9B-96A2-38FEC800325D}|\u0417\u0430\u0434\u0430\u0447\u0430\\\u0417\u0430\u0434\u0430\u0447\u0430.csproj|solutionrelative:\u0437\u0430\u0434\u0430\u0447\u0430\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repositoriy\\1 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab 10\\\u0417\u0430\u0434\u0430\u0447\u0430\\\u0417\u0430\u0434\u0430\u0447\u0430\\Program.cs",
+              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u0447\u0430\\Program.cs",
+              "ToolTip": "D:\\Repositoriy\\1 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab 10\\\u0417\u0430\u0434\u0430\u0447\u0430\\\u0417\u0430\u0434\u0430\u0447\u0430\\Program.cs",
+              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u0447\u0430\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T07:33:21.605Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

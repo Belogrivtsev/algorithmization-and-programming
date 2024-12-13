@@ -69,8 +69,7 @@ class App
                 }
                 else if (Convert.ToString(Str[i]) == "Y" && currentChar == "X")
                 {
-                    if (currentChar != Convert.ToString(Str[i]))
-                    {
+
                         hollowStr += Convert.ToString(Str[i]);
                         maxLength = Math.Max(maxLength, hollowStr.Length);
                         currentChar = Convert.ToString(Str[i]);
