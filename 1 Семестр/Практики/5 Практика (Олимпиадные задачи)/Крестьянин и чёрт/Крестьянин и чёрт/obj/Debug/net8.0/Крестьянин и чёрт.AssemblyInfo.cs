@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Крестьянин и чёрт")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34886ab988cf3065ecd623a0f8bd9426ba52c99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98c8ee068d32971614f63d656d0e9ccda28b4b8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Крестьянин и чёрт")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Крестьянин и чёрт")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

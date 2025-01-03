@@ -1,0 +1,15 @@
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\bin\Debug\net8.0\Lab 12.exe
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\bin\Debug\net8.0\Lab 12.deps.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\bin\Debug\net8.0\Lab 12.runtimeconfig.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\bin\Debug\net8.0\Lab 12.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\bin\Debug\net8.0\Lab 12.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.AssemblyInfoInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.AssemblyInfo.cs
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.csproj.CoreCompileInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.sourcelink.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\refint\Lab 12.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\Lab 12.genruntimeconfig.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 12\Lab 12\obj\Debug\net8.0\ref\Lab 12.dll

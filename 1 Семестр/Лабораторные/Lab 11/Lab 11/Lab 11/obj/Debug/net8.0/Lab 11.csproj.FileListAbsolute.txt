@@ -1,0 +1,15 @@
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\bin\Debug\net8.0\Lab 11.exe
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\bin\Debug\net8.0\Lab 11.deps.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\bin\Debug\net8.0\Lab 11.runtimeconfig.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\bin\Debug\net8.0\Lab 11.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\bin\Debug\net8.0\Lab 11.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.AssemblyInfoInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.AssemblyInfo.cs
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.csproj.CoreCompileInputs.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.sourcelink.json
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\refint\Lab 11.dll
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.pdb
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\Lab 11.genruntimeconfig.cache
+D:\Repositoriy\1 Семестр\Лабораторные\Lab 11\Lab 11\Lab 11\obj\Debug\net8.0\ref\Lab 11.dll

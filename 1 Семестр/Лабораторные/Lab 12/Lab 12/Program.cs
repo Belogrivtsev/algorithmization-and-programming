@@ -1,0 +1,182 @@
+﻿using System;
+public class Furnace
+{
+    public int Temperature { get; set; }
+    public int TimeForCooking { get; set; }
+    public Furnace(int temperature, int timeForCooking)
+    {
+        Temperature = temperature;
+        TimeForCooking = timeForCooking;
+    }
+}
+public class Bread : Furnace
+{
+    public string NameForBread { get; set; }
+    public Bread(int temperature, int timeForCooking, string name) : base(temperature, timeForCooking)
+    {
+        NameForBread = name;
+    }
+    public void ShowInfoAboutBread()
+    {
+        Console.WriteLine($"Название хлеба: {NameForBread} \nТемпература: {Temperature} \nВремя для готовки: {TimeForCooking}");
+    }
+}
+public class Cake : Furnace
+{
+    public string NameForCake { get; set; }
+    public Cake(int temperature, int timeForCooking, string name) : base(temperature, timeForCooking)
+    {
+        NameForCake = name;
+    }
+    public void ShowInfoAboutCake()
+    {
+        Console.WriteLine($"Название кекса: {NameForCake} \nТемпература: {Temperature} \nВремя для готовки: {TimeForCooking}");
+    }
+}
+class App
+{
+    public static Bread[] breads = new Bread[999];
+    public static Cake[] cakes = new Cake[999];
+    public static int countOfBreads = 0;
+    public static int countOfCakes = 0;
+    public static void Main(string[] args)
+    {
+        do
+        {
+            Console.WriteLine();
+            Console.WriteLine("Меню: \n1. Заполнение базы данных (хлеб) \n2. Заполнение базы данных (торты) \n3. Первая выборка (по температуре) \n4. Вторая выборка (по времени для готовки) \n5. Выход");
+            Console.WriteLine();
+            var doChoice = Convert.ToInt32(Console.ReadLine());
+            if (doChoice == 1)
+            {
+                FillBreadList();
+            }
+            if (doChoice == 2)
+            {
+                FillCakeList();
+            }
+            if (doChoice == 3)
+            {
+                DoEqualTemp();
+            }
+            if (doChoice == 4)
+            {
+                DoEqualTime();
+            }
+            if (doChoice == 5)
+            {
+                Console.WriteLine("Выход...");
+                break;
+            }
+            if (doChoice != 1 && doChoice != 2 && doChoice != 3 && doChoice != 4 && doChoice != 5) 
+            {
+                Console.WriteLine("Ошибка: в списке нет такого действия");
+            }
+
+        } while (true);
+
+    }
+    public static void FillBreadList()
+    {
+        int breadsCount = 1;
+        Console.WriteLine();
+        Console.WriteLine("Ведите желаемое количество батонов хлеба:");
+        var number = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < number; i++)
+        {
+            Console.WriteLine($"Введите название {breadsCount} хлеба");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Введите температуру для готовки {breadsCount} хлеба:");
+            var temperature = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Введите время (в минутах) для готовки {breadsCount} хлеба");
+            var time = Convert.ToInt32(Console.ReadLine());
+            breads[i] = new Bread(temperature, time, name);
+            countOfBreads++;
+            breadsCount++;
+        }
+    }
+    public static void FillCakeList()
+    {
+        int cakesCount = 1;
+        Console.WriteLine();
+        Console.WriteLine("Введи желаемое количество тортов:");
+        var number = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < number; i++)
+        {
+            Console.WriteLine($"Введите название {cakesCount} торта");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Введите температуру для готовки {cakesCount} торта:");
+            var temperature = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Введите время (в минутах) для готовки {cakesCount} торта");
+            var time = Convert.ToInt32(Console.ReadLine());
+            cakes[i] = new Cake(temperature, time, name);
+            countOfCakes++;
+            cakesCount++;
+        }
+    }
+    public static void DoEqualTemp()
+    {
+        if (countOfCakes == 0 || countOfBreads == 0)
+        {
+            Console.WriteLine("Ошибка: база данных заполнена не полностью");
+        }
+        else
+        {
+            Console.WriteLine("Введите желаемую температуру");
+            var temp = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < countOfBreads; i++)
+            {
+                if (breads[i].Temperature == temp)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"Нашёлся подходящий хлеб:");
+                    breads[i].ShowInfoAboutBread();
+                }
+            }
+            
+            for (int i = 0; i < countOfCakes; i++)
+            {
+                if (cakes[i].Temperature == temp)
+                {
+
+                    Console.WriteLine();
+                    Console.WriteLine($"Нашёлся подходящий торт:");
+                    cakes[i].ShowInfoAboutCake();
+                }
+            }
+        }
+
+    }
+    public static void DoEqualTime()
+    {
+        if (countOfCakes == 0 || countOfBreads == 0)
+        {
+            Console.WriteLine("Ошибка: база данных заполнена не полностью");
+        }
+        else
+        {
+            Console.WriteLine("Введите желаемое время готовки");
+            var time = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < countOfBreads; i++)
+            {
+                if (breads[i].TimeForCooking == time)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"Нашёлся подходящий хлеб:");
+                    breads[i].ShowInfoAboutBread();
+                }
+            }
+
+            for (int i = 0; i < countOfCakes; i++)
+            {
+                if (cakes[i].TimeForCooking == time)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"Нашёлся подходящий торт:");
+                    cakes[i].ShowInfoAboutCake();
+                }
+            }
+        }
+
+    }
+}

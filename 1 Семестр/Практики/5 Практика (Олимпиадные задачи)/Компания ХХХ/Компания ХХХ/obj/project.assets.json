@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Компания ХХХ\\Компания ХХХ\\Компания ХХХ.csproj",
+      "projectUniqueName": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Компания ХХХ\\Компания ХХХ\\Компания ХХХ.csproj",
       "projectName": "Компания ХХХ",
-      "projectPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Компания ХХХ\\Компания ХХХ\\Компания ХХХ.csproj",
+      "projectPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Компания ХХХ\\Компания ХХХ\\Компания ХХХ.csproj",
       "packagesPath": "C:\\Users\\nucle\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика\\Компания ХХХ\\Компания ХХХ\\obj\\",
+      "outputPath": "D:\\Repositoriy\\1 Семестр\\Практики\\5 Практика (Олимпиадные задачи)\\Компания ХХХ\\Компания ХХХ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,132 @@
+using System;
+public class Planet
+{
+    public int CountOfMoons { get; set; }
+    public int Distance { get; set; }
+    public int Radius { get; set; }
+    public Planet(int countOfMoons, int distance, int radius)
+    {
+        CountOfMoons = countOfMoons;
+        Distance = distance;
+        Radius = radius;
+    }
+    public void ShowInfo()
+    {
+        Console.WriteLine();
+        Console.WriteLine($"Количество спутников: {CountOfMoons} \nДистанция: {Distance} \nРадиус: {Radius}");
+        Console.WriteLine();
+    }
+}
+class App
+{
+    public static Planet[] ListOfPlanets = new Planet[999];
+    public static int planetsCount = 0;
+    public static void Main(string[] args)
+    {
+        int flag = 0; // чтобы знать, что база данных была заполнена
+        do
+        {
+            Console.WriteLine();
+            Console.WriteLine("Меню: \n1. Заполнение базы данных \n2. Первая выборка (по кол-ву спутников) \n3. Вторая выборка (по удалённости) \n4. Выход");
+            Console.WriteLine();
+            var doChoice = Convert.ToInt32(Console.ReadLine());
+            if (doChoice == 1) //
+            {
+                FillList();
+            }
+            if (doChoice == 2) //
+            {
+                if (planetsCount == 0)
+                {
+                    Console.WriteLine("Ошибка: база данных не заполнена");
+                }
+                else
+                {
+                    DoEqualList1();
+                }
+            }
+            if (doChoice == 3) //
+            {
+                if (planetsCount == 0)
+                {
+                    Console.WriteLine("Ошибка: база данных не заполнена");
+                }
+                else
+                {
+                    DoEqualList2();
+                }
+            }
+            if (doChoice == 4) //
+            {
+                Console.WriteLine();
+                Console.WriteLine("Выход...");
+                break;
+            }
+            if (doChoice != 1 && doChoice != 2 && doChoice != 3 && doChoice != 4) //
+            {
+                Console.WriteLine("Ошибка: нет такого действия в списке");
+            }
+        } while (true);
+
+    }
+    public static void FillList()
+    {
+        Console.WriteLine("Введите количество планет:");
+        var number = Convert.ToInt32(Console.ReadLine());
+        int countOfPlanets = 1; // счётчик для красоты вывода
+        for (int i = 0; i < number; i++)
+        {
+            Console.WriteLine($"Введите количество спутников для {countOfPlanets} планеты:");
+            var countOfMoons = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Введите дистанцию для {countOfPlanets} планеты:");
+            var distance = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Введите радиус для {countOfPlanets} планеты:");
+            var radius = Convert.ToInt32(Console.ReadLine());
+            ListOfPlanets[i] = new Planet(countOfMoons, distance, radius); // добавление планет в базу данных
+            countOfPlanets++;
+            planetsCount++; 
+
+        }
+        Console.WriteLine();
+        Console.WriteLine("Получившаяся база данных");
+        countOfPlanets = 1;
+        for (int i = 0; i < number; i++)
+        {
+            Console.WriteLine($"Для {countOfPlanets} планеты:");
+            ListOfPlanets[i].ShowInfo();
+            countOfPlanets++;
+        }
+    }
+    public static void DoEqualList1()
+    {
+        Console.WriteLine("Введите нужное вам количество спутников:");
+        var needCount = Convert.ToInt32(Console.ReadLine());
+        int countOfplanes = 1;
+        for (int i = 0; i < planetsCount; i++)
+        {
+            if (ListOfPlanets[i].CountOfMoons == needCount)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Нашлась подходящая планета под номером {countOfplanes}:");
+                ListOfPlanets[i].ShowInfo();
+            }
+            countOfplanes++;
+        }
+    }
+    public static void DoEqualList2()
+    {
+        Console.WriteLine("Введите нужную вам дистанцию:");
+        var needCount = Convert.ToInt32(Console.ReadLine());
+        int countOfplanes = 1;
+        for (int i = 0; i < planetsCount; i++)
+        {
+            if (ListOfPlanets[i].Distance == needCount)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Нашлась подходящая планета под номером {countOfplanes}:");
+                ListOfPlanets[i].ShowInfo();
+            }
+            countOfplanes++;
+        }
+    }
+}
