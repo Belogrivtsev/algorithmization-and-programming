@@ -1,0 +1,29 @@
+D:\Programing\test\test\bin\Debug\net8.0\test.exe
+D:\Programing\test\test\bin\Debug\net8.0\test.deps.json
+D:\Programing\test\test\bin\Debug\net8.0\test.runtimeconfig.json
+D:\Programing\test\test\bin\Debug\net8.0\test.dll
+D:\Programing\test\test\bin\Debug\net8.0\test.pdb
+D:\Programing\test\test\obj\Debug\net8.0\test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programing\test\test\obj\Debug\net8.0\test.AssemblyInfoInputs.cache
+D:\Programing\test\test\obj\Debug\net8.0\test.AssemblyInfo.cs
+D:\Programing\test\test\obj\Debug\net8.0\test.csproj.CoreCompileInputs.cache
+D:\Programing\test\test\obj\Debug\net8.0\test.dll
+D:\Programing\test\test\obj\Debug\net8.0\refint\test.dll
+D:\Programing\test\test\obj\Debug\net8.0\test.pdb
+D:\Programing\test\test\obj\Debug\net8.0\test.genruntimeconfig.cache
+D:\Programing\test\test\obj\Debug\net8.0\ref\test.dll
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\bin\Debug\net8.0\test.exe
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\bin\Debug\net8.0\test.deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\bin\Debug\net8.0\test.runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\bin\Debug\net8.0\test.dll
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\bin\Debug\net8.0\test.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.dll
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\refint\test.dll
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\test.genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (Дискретная математика)\Задача с компонентами графа (2 алгоритм)\test\obj\Debug\net8.0\ref\test.dll

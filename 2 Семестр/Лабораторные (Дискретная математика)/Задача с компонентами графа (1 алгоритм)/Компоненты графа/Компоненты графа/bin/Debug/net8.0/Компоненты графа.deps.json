@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Компоненты графа/1.0.0": {
+        "runtime": {
+          "Компоненты графа.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Компоненты графа/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

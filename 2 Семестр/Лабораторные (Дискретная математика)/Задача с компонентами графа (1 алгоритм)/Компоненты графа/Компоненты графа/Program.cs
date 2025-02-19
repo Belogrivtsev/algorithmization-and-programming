@@ -1,0 +1,169 @@
+﻿using System;
+using System.Diagnostics;
+using System.Text;
+namespace AwfulExercise;
+class App
+{
+    public static void ShowGraph(int[,] graph, int argument)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Номера вершин:");
+        string StrForUpload = "";
+        int CountForUpload = 1;
+        for (int i = 0; i < argument; i++)
+        {
+            StrForUpload += $"  {CountForUpload}";
+            CountForUpload++;
+        }
+        Console.WriteLine(StrForUpload);
+        Console.WriteLine();
+        for (int i = 0; i < argument; i++)
+        {
+            for (int j = 0; j < argument; j++)
+            {
+                Console.Write("{0,3}", graph[i, j]);
+            }
+            Console.WriteLine();
+        }
+    }
+    public static void ShowInfoAboutGraph(int[,] graph, int argument)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Информация:");
+        for (int i = 0; i < argument; i++)
+        {
+            for (int j = 0; j < argument; j++)
+            {
+                if (graph[i, j] == 1)
+                {
+                    Console.WriteLine($"{i + 1} связана с {j + 1}");
+                }
+            }
+        }
+    }
+    public static void CreateStrForEqual(int argument) // просто вывод строки вершин в порядке возрастания
+    {
+        string outputStr = "";
+        Console.WriteLine();
+        for (int i = 0; i < argument; i++)
+        {
+            outputStr += $"{i + 1} ";
+        }
+        Console.WriteLine("Вершины:");
+        Console.WriteLine();
+        Console.WriteLine(outputStr);
+        Console.WriteLine();
+    }
+    public static String ReplaceCharInString(String str, int index, Char newSymb)
+    {
+        return str.Remove(index, 1).Insert(index, newSymb.ToString()); // Поиндексная замена элемента в строке
+    }
+
+
+
+    static void Main()
+    {
+
+        // Код для создания матрицы смежности
+
+        Console.WriteLine("Введите размер матрицы (Матрица будет обработана до симметричной, начиная с 1 строки):");
+        var n = Convert.ToInt32(Console.ReadLine());
+        int[,] list = new int[n, n];
+        int countForElements = 1; // счётчик для строк
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Введите элементы {countForElements} строки:");
+            for (int j = 0; j < n; j++)
+            {
+                list[i, j] = Convert.ToInt32(Console.ReadLine());
+                if (list[i, j] != 0 && list[i, j] != 1) // вдруг мы введем не 0 и 1 в матрице, тогда программа сразу закроется
+                {
+                    Console.WriteLine("Ошибка: элементы матрицы могут быть только 0 и 1");
+                    Environment.Exit(0);
+                }
+            }
+            countForElements++;
+        }
+
+        // Обработка матрицы для того, чтобы она была симметричной 
+
+        int count = 0; // базовый счётчик
+
+        for (int i = 0; i < n; i++)
+        {
+            list[i, i] = 0; // на главной диагонале все нули
+        }
+
+        for (int i = 0; i < n; i++) // придание матрице симметричности начиная с 1ой строки
+        {
+            count = i;
+            while (count < n)
+            {
+                if (list[i, count] == 0)
+                {
+                    list[count, i] = 0;
+                }
+                else if (list[i, count] == 1)
+                {
+                    list[count, i] = 1;
+                }
+                count++;
+            }
+
+        }
+
+        //Код для определения чё вообще происходит с графом
+
+        ShowGraph(list, n);
+
+        ShowInfoAboutGraph(list, n);
+
+        //Главный функционал программы
+
+        CreateStrForEqual(n);
+
+        string MainStr = ""; // строка из номеров всех вершин
+
+        for (int i = 1; i < n + 1; i++) // заполняем её
+        {
+            MainStr += Convert.ToString(i);
+        }
+        //Console.WriteLine(MainStr);
+
+        int CountForN = MainStr.Length; // кол-во всевозможных вершин
+
+        string CompStr = ""; // строка-компонента
+
+        int result = 0;
+
+        for (int i = 0; i < MainStr.Length; i++)
+        {
+            if (MainStr[i] != ' ') // мы проверяем есть ли вообще вершина в исходной строке и можно ли делать компоненту из неё
+            {
+                CompStr += MainStr[i];
+                MainStr = ReplaceCharInString(MainStr, i, ' '); // когда создаём компоненту, то сразу убираем символ из которого она создана
+                int countForComp; // счётчик для элементов компоненты
+                for (int j = 0; j < CompStr.Length; j++) // пробегаем по строке компоненте
+                {
+                    count = 0;
+                    countForComp = Convert.ToInt32(Convert.ToString(CompStr[j])) - 1; // выставляем индекс вершины компоненты
+                    while (count < CountForN) // анализируем каждую вершину
+                    {
+                        //Console.WriteLine($"countForComp = {countForComp} , count = {count}");
+                        //Console.WriteLine($"list[countForComp, count] = {list[countForComp, count]}, MainStr[count] = {MainStr[count]}");
+                        if (list[countForComp, count] == 1 && MainStr[count] != ' ')
+                        {
+                            CompStr += MainStr[count];
+                            MainStr = ReplaceCharInString(MainStr, count, ' '); 
+                        }
+                        count += 1;
+                    }
+                    count = 0;
+                }
+                result++; // ура, получилась компонента
+            }
+        }
+
+        Console.WriteLine($"Ответ: {result}");
+    }
+}

@@ -1,0 +1,195 @@
+﻿using System;
+using System.Diagnostics;
+using System.Text;
+namespace AwfulExercise;
+class App
+{
+    public static void ShowGraph(int[,] graph, int argument)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Номера вершин:");
+        string StrForUpload = "";
+        int CountForUpload = 1;
+        for (int i = 0; i < argument; i++)
+        {
+            StrForUpload += $"  {CountForUpload}";
+            CountForUpload++;
+        }
+        Console.WriteLine(StrForUpload);
+        Console.WriteLine();
+        for (int i = 0; i < argument; i++)
+        {
+            for (int j = 0; j < argument; j++)
+            {
+                Console.Write("{0,3}", graph[i, j]);
+            }
+            Console.WriteLine();
+        }
+    }
+    public static void ShowInfoAboutGraph(int[,] graph, int argument)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Информация:");
+        for (int i = 0; i < argument; i++)
+        {
+            for (int j = 0; j < argument; j++)
+            {
+                if (graph[i, j] == 1)
+                {
+                    Console.WriteLine($"{i + 1} связана с {j + 1}");
+                }
+            }
+        }
+    }
+    public static void CreateStrForEqual(int argument) // просто вывод строки вершин в порядке возрастания
+    {
+        string outputStr = "";
+        Console.WriteLine();
+        for (int i = 0; i < argument; i++)
+        {
+            outputStr += $"{i + 1} ";
+        }
+        Console.WriteLine("Вершины:");
+        Console.WriteLine();
+        Console.WriteLine(outputStr);
+        Console.WriteLine();
+    }
+    public static String ReplaceCharInString4(String source, int index, Char newSymb)
+    { // функция, позволяющая заменять символы в строке по индексу (это нужно в конце кода)
+        StringBuilder sb = new StringBuilder(source);
+        sb[index] = newSymb; 
+        return sb.ToString(); // необязательно, но пусть будет
+    }
+
+
+    static void Main()
+    {
+
+        // Код для создания матрицы смежности
+
+        Console.WriteLine("Введите размер матрицы (Матрица будет обработана до симметричной, начиная с 1 строки):");
+        var n = Convert.ToInt32(Console.ReadLine());
+        int[,] list = new int[n, n];
+        int countForElements = 1; // счётчик для строк
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Введите элементы {countForElements} строки:");
+            for (int j = 0; j < n; j++)
+            {
+                list[i, j] = Convert.ToInt32(Console.ReadLine());
+                if (list[i, j] != 0 && list[i, j] != 1) // вдруг мы введем не 0 и 1 в матрице, тогда программа сразу закроется
+                {
+                    Console.WriteLine("Ошибка: элементы матрицы могут быть только 0 и 1");
+                    Environment.Exit(0);
+                }
+            }
+            countForElements++;
+        }
+
+        // Обработка матрицы для того, чтобы она была симметричной 
+
+        int count = 0; // базовый счётчик
+
+        for (int i = 0; i < n; i++)
+        {
+            list[i, i] = 0; // на главной диагонале все нули
+        }
+
+        for (int i = 0; i < n; i++) // придание матрице симметричности начиная с 1ой строки
+        {
+            count = i;
+            while (count < n)
+            {
+                if (list[i, count] == 0)
+                {
+                    list[count, i] = 0;
+                }
+                else if (list[i, count] == 1)
+                {
+                    list[count ,i] = 1;
+                }
+                count++;
+            }
+            
+        }
+
+        //Код для определения чё вообще происходит с графом
+
+        ShowGraph(list, n);
+
+        ShowInfoAboutGraph(list, n);
+
+        //Главный функционал программы
+
+        CreateStrForEqual(n);
+
+        string MainStr = "1";
+
+        count = 0;
+
+        int countForN = 2; // счётчик, чтобы не заставлять бегать по вершинам больше, чем нужно
+
+        int dotcount = 0; // счётчик количества вершин
+
+        for (int i = 1; i < n; i++) // начинаем ставить в соответствие цифры для каждой из вершин (начинаем сразу с двойки, поэтому i = 1)
+        {
+           
+            while (count < countForN) // считаем количество связаных вершин с текущей
+            {
+                if (list[i, count] == 1)
+                {
+                    dotcount++;
+                }
+                count++;
+            }
+
+            count = 0;
+
+            if (dotcount == 0) // если вершина вообще ни с кем не связана (из доступных ей вершин), то ставим ей саму вершину
+            {
+                MainStr += Convert.ToString(i + 1); // ставим в соответствие саму себя
+            }
+
+            if (dotcount == 1) // вершине соответствует ТОЛЬКО 1 вершина
+            {
+                while (count < countForN)
+                {
+                    if (list[i, count] == 1)
+                    {
+                        MainStr += Convert.ToString(MainStr[count]); // ставим в соответствие то, что стояло той самой вершине
+                    }
+                    count++;
+                }
+            }
+            if (dotcount > 1) // вершине соответствует БОЛЬШЕ ЧЕМ 1 вершина
+            {
+                int MinDot = 99;
+                while (count < countForN) // для начала надо пробежаться по всем вершинам, чтобы найти наименьшее поставленное значение
+                {
+                    if (list[i, count] == 1)
+                    {
+                       MinDot = Math.Min(MinDot, Convert.ToInt32(Convert.ToString((MainStr[count])))); // из чара в инт конвертировать нельзя
+                    } // поэтому немного извращаемся
+                    count++;
+                }
+
+                count = 0;
+
+                while (count < countForN) // после того как нашли наименьшее значение
+                {// начинаем ставить всем данное минимальное значение
+                    if (list[i, count] == 1)
+                    {
+                        ReplaceCharInString4(MainStr, count, Convert.ToChar(MinDot));
+                    }
+                    count++;
+                }
+                MainStr += Convert.ToString(MinDot); // + саму вершину
+            }
+            count = 0;
+            dotcount = 0;
+            countForN++;
+        }
+    Console.WriteLine($"Строка-компонента: {MainStr}");
+    Console.WriteLine($"Ответ: {MainStr.Distinct().Count()}"); // вывод на экран окончательного ответа (Distinct нужен для подсчёта различных символов)
+    }
+}

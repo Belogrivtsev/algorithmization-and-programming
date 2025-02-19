@@ -1,0 +1,33 @@
+            while (count < countForN)
+            {
+                if (list[i, count] == 1)
+                {
+                    if (Convert.ToString(MainStr[count]) != "") // 
+                    {
+                        minSymbol = Math.Min(count + 1, Convert.ToInt32(MainStr[count]));
+                    }
+                    // условно, если мы увидели, что 2 связана с 1, то мы ставим 1 двойке, т.е count + 1
+                    flag++;
+                    break; // тут же завершаем цикл, т.к дальше проверять смысла нет
+                }
+                else
+                {
+                    count++;
+                }
+            }
+            if (flag == 0)
+            {
+                MainStr += $" {i + 1}"; // если условная 2 вообще никак не связана с вершинами, то ставим ей саму двойку, т.е i + 1
+            }
+            else
+            {
+                MainStr += Convert.ToString(minSymbol);
+            }
+
+ВОЗМОЖНОЕ РЕШЕНИЕ:
+public String ReplaceCharInString4(String source, int index, Char newSymb)
+{
+    StringBuilder sb = new StringBuilder(source);
+    sb[index] = newSymb;
+    return sb.ToString();
+}
