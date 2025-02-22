@@ -13,3 +13,18 @@ D:\Repositoriy\2 Семестр\Лабораторные\Lab 1 (Повторен
 D:\Repositoriy\2 Семестр\Лабораторные\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.pdb
 D:\Repositoriy\2 Семестр\Лабораторные\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.genruntimeconfig.cache
 D:\Repositoriy\2 Семестр\Лабораторные\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\ref\Lab 1.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\bin\Debug\net8.0\Lab 1.exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\bin\Debug\net8.0\Lab 1.deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\bin\Debug\net8.0\Lab 1.runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\bin\Debug\net8.0\Lab 1.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\bin\Debug\net8.0\Lab 1.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\refint\Lab 1.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\Lab 1.genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab 1 (Повторение ООП, задача про телефон и номера)\Lab 1\Lab 1\obj\Debug\net8.0\ref\Lab 1.dll
