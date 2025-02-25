@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Алгоритм Краскала", "Алгоритм Краскала\Алгоритм Краскала.csproj", "{5EA57D17-4172-4576-BFA6-18DEA828B33E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA57D17-4172-4576-BFA6-18DEA828B33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA57D17-4172-4576-BFA6-18DEA828B33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA57D17-4172-4576-BFA6-18DEA828B33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA57D17-4172-4576-BFA6-18DEA828B33E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {350CC090-0B67-449A-81D0-FD7FE9EA1D43}
+	EndGlobalSection
+EndGlobal
