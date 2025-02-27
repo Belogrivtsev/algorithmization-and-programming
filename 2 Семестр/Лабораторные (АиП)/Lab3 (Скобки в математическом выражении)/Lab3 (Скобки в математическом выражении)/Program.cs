@@ -2,29 +2,6 @@
 namespace Lab3;
 class App
 {
-    public static bool FirstChecking(string str)
-    {
-        bool result = true;
-        char[] list = ['{', '}', '[', ']', '(', ')'];
-        foreach (var i in list)
-        {
-            int count = 0;  
-            foreach (var j in str)
-            {
-                if (i == j)
-                {
-                    count++;
-                }
-            }
-            if (count != 1)
-            {
-                result = false;
-                break;
-            }
-            count = 0;
-        }
-        return result;
-    }
     public static bool IsBrace(char symbol)
     {
         bool result = false;
@@ -119,13 +96,6 @@ class App
         ShowInfo();
         Console.WriteLine("Введите математическое выражение:");
         string expression = Console.ReadLine();
-        if (FirstChecking(expression) == true) // ура, в выражении есть все 6 скобок и они встречаются только 1 раз
-        {
-            FinalChecking(expression); // {[()]}
-        }
-        else
-        {
-            Console.WriteLine("Скобки расставлены неверно");
-        }
+        FinalChecking(expression);
     }
 }
