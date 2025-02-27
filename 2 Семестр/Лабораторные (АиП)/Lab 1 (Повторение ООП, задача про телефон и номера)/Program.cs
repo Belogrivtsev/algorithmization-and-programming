@@ -1,0 +1,260 @@
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
+namespace Phone;
+public class Phone
+{
+    public string NumberOfPhone { get; set; }
+    public string OperatorOfPhone { get; set; }
+    public int YearOfPhone { get; set; }
+    public Phone(string number, string provider, int year)
+    {
+        NumberOfPhone = number;
+        OperatorOfPhone = provider;
+        YearOfPhone = year;
+    }
+    public void ShowInfoAboutPhone()
+    {
+        Console.WriteLine($"Номер: {NumberOfPhone}\nОператор: {OperatorOfPhone}\nГод регистрации: {YearOfPhone}");
+    }
+}
+public class Person
+{
+    public string Name { get; set; }
+    public string City { get; set; }
+    public Phone[] PhonesOfPersons { get; set; }
+    public Person(string name, string city, Phone[] PersonPhones)
+    {
+        Name = name;
+        City = city;
+        PhonesOfPersons = PersonPhones;
+    }
+    public void ShowInfoAboutPerson()
+    {
+        Console.WriteLine($"Имя: {Name}\nГород: {City}");
+    }
+}
+class App
+{
+    public static Phone[] phones = new Phone[999];
+    public static Person[] persons = new Person[999];
+    public static int phonesCount = 0;
+    public static int personCount = 0;
+    public static int flag = 0;
+    public static void Main(string[] args)
+    { // для проверкм заполнения базы данных телефонов
+        do
+        {
+            Console.WriteLine();
+            Console.WriteLine("Меню: \n1. Заполнение базы данных (пользователи) \n2. Заполнение базы данных (телефоны) \n" +
+                "3. Первая выборка (по номеру телефона) \n4. Вторая выборка (по оператору) \n" +
+                "5. Третья выборка (по году регистрации) \n6. Выход из программы");
+            Console.WriteLine();
+            var doChoice = Convert.ToInt32(Console.ReadLine());
+            if (doChoice == 1)
+            {
+                FillPersonsList();
+            }
+            if (doChoice == 2)
+            {
+                FillPhonesList();
+            }
+            if (doChoice == 3)
+            {
+                DoEqualPhones();
+            }
+            if (doChoice == 4)
+            {
+                DoEqualProvider();
+            }
+            if (doChoice == 5)
+            {
+                DoEqualListOfPhonesAndYear();
+            }
+            if (doChoice == 6)
+            {
+                break;
+            }
+            if (doChoice != 1 && doChoice != 2 && doChoice != 3 && doChoice != 4 && doChoice != 5 && doChoice != 6)
+            {
+                Console.WriteLine("Ошибка: в списке нет такого действия");
+            }
+
+        } while (true);
+        
+    }
+    public static void FillPersonsList()
+    {
+        if (flag < 0)
+        {
+            Console.WriteLine($"{flag} Ошибка: база данных телефонов не заполнена, ещё рано заполнять базу данных пользователей");
+        }
+        else
+        {
+            Console.WriteLine("Введите количество пользователей:");
+            var n = Convert.ToInt32(Console.ReadLine());
+            personCount = n;
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Для {i + 1} пользователя:");
+                Console.WriteLine();
+                Console.WriteLine("Введите имя пользователя:");
+                string Name = Console.ReadLine();
+                Console.WriteLine("Введите город пользователя:");
+                string City = Console.ReadLine();
+                Console.WriteLine("Начнём добавлять телефоны");
+                Console.WriteLine($"На данный момент в базе данных телефонов находятся {phonesCount} телефонов:");
+                for (int j = 0; j < phonesCount; j++)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"{j + 1} телефон:");
+                    phones[j].ShowInfoAboutPhone();
+                    Console.WriteLine();
+                }
+                Console.WriteLine("Введите кололичество телефонов пользователя:");
+                var k = Convert.ToInt32(Console.ReadLine());
+                if (k > phonesCount)
+                {
+                    Console.WriteLine("Ошибка: введенное количество больше, чем максимум");
+                }
+                else
+                {
+                    Phone[] checklist = new Phone[k];
+                    Console.WriteLine("Какие телефоны желаете выбрать? (Введите номера)");
+                    for (int l = 0; l < checklist.Length; l++)
+                    {
+                        int index = Convert.ToInt32(Console.ReadLine());
+                        checklist[l] = phones[index - 1];
+                    }
+                    persons[i] = new Person(Name, City, checklist);
+                }
+            }
+        }
+    }
+    public static void FillPhonesList()
+    {
+        Console.WriteLine("Введите количество телефонов:");
+        var n = Convert.ToInt32(Console.ReadLine());
+        phonesCount = n;
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Для {i + 1} телефона:");
+            Console.WriteLine();
+            Console.WriteLine("Введите сам номер:");
+            string Number = Console.ReadLine();
+            Console.WriteLine("Введите оператор телефона:");
+            string Provider = Console.ReadLine();
+            Console.WriteLine("Введите год регистрации:");
+            int Year = Convert.ToInt32(Console.ReadLine());
+            phones[i] = new Phone(Number, Provider, Year);
+        }
+        flag += 1;
+    }
+    public static void DoEqualPhones()
+    {
+        if (personCount == 0 || phonesCount == 0)
+        {
+            Console.WriteLine("База данных не заполнена полностью");
+        }
+        else
+        {
+            Console.WriteLine($"На данный момент в базе данных телефонов находятся {phonesCount} телефонов:");
+            for (int j = 0; j < phonesCount; j++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"{j + 1} телефон:");
+                phones[j].ShowInfoAboutPhone();
+                Console.WriteLine();
+            }
+            Console.WriteLine("Введите номер телефона по котору осуществляется выборка");
+            string PhoneNumber = Console.ReadLine();
+            for (int i = 0; i < personCount; i++) // начинаем бежать по пользователям
+            {
+                for (int j = 0; j < phonesCount; j++) // проверяем все возможные телефоны
+                {
+                    Phone obj = persons[i].PhonesOfPersons[j];
+                    if (obj.NumberOfPhone ==  PhoneNumber)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Нашёлся подходящий пользователь:");
+                        Console.WriteLine();
+                        persons[i].ShowInfoAboutPerson();
+                    }
+                }
+            }
+        }
+    }
+    public static void DoEqualProvider()
+    {
+        if (personCount == 0 || phonesCount == 0)
+        {
+            Console.WriteLine("База данных не заполнена полностью");
+        }
+        else
+        {
+            Console.WriteLine($"На данный момент в базе данных телефонов находятся {phonesCount} телефонов:");
+            for (int j = 0; j < phonesCount; j++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"{j + 1} телефон:");
+                phones[j].ShowInfoAboutPhone();
+                Console.WriteLine();
+            }
+            Console.WriteLine("Введите провайдер телефона по котору осуществляется выборка");
+            string Provider = Console.ReadLine();
+            for (int i = 0; i < personCount; i++) // начинаем бежать по пользователям
+            {
+                for (int j = 0; j < phonesCount; j++) // проверяем все возможные телефоны
+                {
+                    Phone obj = persons[i].PhonesOfPersons[j];
+                    if (obj.OperatorOfPhone == Provider)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Нашёлся подходящий пользователь:");
+                        Console.WriteLine();
+                        persons[i].ShowInfoAboutPerson();
+                    }
+                }
+            }
+        }
+    }
+    public static void DoEqualListOfPhonesAndYear()
+    {
+        if (personCount == 0 || phonesCount == 0)
+        {
+            Console.WriteLine("База данных не заполнена полностью");
+        }
+        else
+        {
+            Console.WriteLine($"На данный момент в базе данных телефонов находятся {phonesCount} телефонов:");
+            for (int j = 0; j < phonesCount; j++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"{j + 1} телефон:");
+                phones[j].ShowInfoAboutPhone();
+                Console.WriteLine();
+            }
+            Console.WriteLine("Введите год регистрации по котору осуществляется выборка");
+            var PhoneYear = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < personCount; i++) // начинаем бежать по пользователям
+            {
+                for (int j = 0; j < phonesCount; j++) // проверяем все возможные телефоны
+                {
+                    Phone obj = persons[i].PhonesOfPersons[j];
+                    if (obj.YearOfPhone == PhoneYear)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Нашёлся подходящий пользователь:");
+                        Console.WriteLine();
+                        persons[i].ShowInfoAboutPerson();
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+    
