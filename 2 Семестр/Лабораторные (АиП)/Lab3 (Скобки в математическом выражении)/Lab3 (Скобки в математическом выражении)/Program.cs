@@ -93,9 +93,14 @@ class App
 
     public static void Main()
     {
-        ShowInfo();
-        Console.WriteLine("Введите математическое выражение:");
-        string expression = Console.ReadLine();
-        FinalChecking(expression);
+        //ShowInfo();
+        //Console.WriteLine("Введите математическое выражение:");
+        //string expression = Console.ReadLine();
+        //FinalChecking(expression);
+        char a = '9';
+        int b = (int)Char.GetNumericValue(a);
+        Console.WriteLine($"b = {b}");
+
+
     }
 }

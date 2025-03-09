@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab3 (Скобки в математическом выражении)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bb5879a04f257f1730e3e363a1e28e5ca6b7bba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a49f0646a5e8e159c9385ba3a7921634c9479c19")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab3 (Скобки в математическом выражении)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab3 (Скобки в математическом выражении)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

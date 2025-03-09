@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Алгоритм Краскала")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+739337d111eaa3156492b35431f0ab98d8fbb5e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a49f0646a5e8e159c9385ba3a7921634c9479c19")]
 [assembly: System.Reflection.AssemblyProductAttribute("Алгоритм Краскала")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Алгоритм Краскала")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
