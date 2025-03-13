@@ -16,7 +16,8 @@ class App
     {
         var list = new List<char> { '}', ']', ')', '(', '[', '{' };
         Stack<char> stackEnter = new Stack<char>(list);
-        Console.WriteLine($"{string.Join(" ", stackEnter.ToArray())} - правильный порядок скобок в математическом выражении");
+        Console.WriteLine($"{string.Join(" ", stackEnter.ToArray())} - пример правильного порядка скобок в математическом выражении");
+        Console.WriteLine("Варианты по типу { ( [ } ] ) считаются неверными");
     }
     public static bool IsEmpty(Stack<char> list) // проверка стэка на пустоту
     {
@@ -39,7 +40,7 @@ class App
         {
             if (IsBrace(i) == true) // элемент строки - скобка
             {
-                if (i == '{') // приход открывающийся скобки - помещаем её на верхушку стэка
+                if (i == '{') // приход открывающейся скобки - помещаем её на верхушку стэка
                 {
                     stack.Push(i);
                 }
@@ -52,11 +53,12 @@ class App
                     stack.Push(i);
                 }
                 if (i == '}') // приход закрывающийся - смотрим на то, есть ли там соченитание <открыть-закрыть>
-                    // если нет, то сразу закрываем весь алгоритм ретурном
+                    // если нет, то сразу закрываем весь алгоритм
                 {
                     if (stack.Peek() !=  '{' || IsEmpty(stack))
                     {
-                        return false;
+                        result = false;
+                        break;
                     }
                     stack.Pop();
                 }
@@ -64,7 +66,8 @@ class App
                 {
                     if (stack.Peek() != '[' || IsEmpty(stack))
                     {
-                        return false;
+                        result = false;
+                        break;
                     }
                     stack.Pop();
                 }
@@ -72,7 +75,8 @@ class App
                 {
                     if (stack.Peek() != '(' || IsEmpty(stack))
                     {
-                        return false;
+                        result = false;
+                        break;
                     }
                     stack.Pop();
                 }
@@ -93,14 +97,9 @@ class App
 
     public static void Main()
     {
-        //ShowInfo();
-        //Console.WriteLine("Введите математическое выражение:");
-        //string expression = Console.ReadLine();
-        //FinalChecking(expression);
-        char a = '9';
-        int b = (int)Char.GetNumericValue(a);
-        Console.WriteLine($"b = {b}");
-
-
+        ShowInfo();
+        Console.WriteLine("Введите математическое выражение:");
+        string expression = Console.ReadLine();
+        FinalChecking(expression);
     }
 }

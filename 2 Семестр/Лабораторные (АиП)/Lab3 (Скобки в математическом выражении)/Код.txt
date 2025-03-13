@@ -1,0 +1,105 @@
+using System;
+namespace Lab3;
+class App
+{
+    public static bool IsBrace(char symbol)
+    {
+        bool result = false;
+        var list = new List<char> { '}', '{', ']', '[', ')', '(' };
+        if (list.Contains(symbol) == true)
+        {
+            result = true;
+        }
+        return result;
+    }
+    public static void ShowInfo()
+    {
+        var list = new List<char> { '}', ']', ')', '(', '[', '{' };
+        Stack<char> stackEnter = new Stack<char>(list);
+        Console.WriteLine($"{string.Join(" ", stackEnter.ToArray())} - пример правильного порядка скобок в математическом выражении");
+        Console.WriteLine("Варианты по типу { ( [ } ] ) считаются неверными");
+    }
+    public static bool IsEmpty(Stack<char> list) // проверка стэка на пустоту
+    {
+        bool result;
+        if (list.Count == 0)
+        {
+            return result = true;
+        }
+        else
+        {
+            return result = false; 
+        }
+        
+    }
+    public static bool FinalChecking(string str)
+    {
+        bool result = false;
+        Stack<char> stack = new Stack<char>(); // создание стэка
+        foreach (var i in str)
+        {
+            if (IsBrace(i) == true) // элемент строки - скобка
+            {
+                if (i == '{') // приход открывающейся скобки - помещаем её на верхушку стэка
+                {
+                    stack.Push(i);
+                }
+                if (i == '[')
+                {
+                    stack.Push(i);
+                }
+                if (i == '(')
+                {
+                    stack.Push(i);
+                }
+                if (i == '}') // приход закрывающийся - смотрим на то, есть ли там соченитание <открыть-закрыть>
+                    // если нет, то сразу закрываем весь алгоритм
+                {
+                    if (stack.Peek() !=  '{' || IsEmpty(stack))
+                    {
+                        result = false;
+                        break;
+                    }
+                    stack.Pop();
+                }
+                if (i == ']')
+                {
+                    if (stack.Peek() != '[' || IsEmpty(stack))
+                    {
+                        result = false;
+                        break;
+                    }
+                    stack.Pop();
+                }
+                if (i == ')')
+                {
+                    if (stack.Peek() != '(' || IsEmpty(stack))
+                    {
+                        result = false;
+                        break;
+                    }
+                    stack.Pop();
+                }
+            }
+        }
+        result = IsEmpty(stack);
+        if (result)
+        {
+            Console.WriteLine("Скобки расставлены верно");
+            return result;
+        }
+        else
+        {
+            Console.WriteLine("Скобки расставлены неверно");
+            return result;
+        }
+    }
+
+    public static void Main()
+    {
+        ShowInfo();
+        Console.WriteLine("Введите математическое выражение:");
+        string expression = Console.ReadLine();
+        FinalChecking(expression);
+    }
+}
