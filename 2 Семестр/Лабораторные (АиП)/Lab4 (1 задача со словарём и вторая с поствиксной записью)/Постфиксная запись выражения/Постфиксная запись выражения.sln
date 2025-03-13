@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Постфиксная запись выражения", "Постфиксная запись выражения\Постфиксная запись выражения.csproj", "{17EF71DE-E64B-490A-942F-2DB70DDC1984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17EF71DE-E64B-490A-942F-2DB70DDC1984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EF71DE-E64B-490A-942F-2DB70DDC1984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EF71DE-E64B-490A-942F-2DB70DDC1984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EF71DE-E64B-490A-942F-2DB70DDC1984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B699A4B4-D0BD-4BC9-BBD3-BF82544C175F}
+	EndGlobalSection
+EndGlobal
