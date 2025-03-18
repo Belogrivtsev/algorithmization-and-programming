@@ -8,7 +8,12 @@ class App
 
     public static int Sum(List<int> list, int previousResult, int coef)
     {
-        if (coef == 1)
+        //Console.WriteLine($"{previousResult}, {coef}");
+        if (coef == 1 && list.Count == 1)
+        {
+            return 0 + list[0];
+        }
+        else if (coef == 1)
         {
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
@@ -17,7 +22,7 @@ class App
             }
             return result;
         }
-        else
+        else 
         {
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
@@ -29,7 +34,12 @@ class App
     }
     public static int Diff(List<int> list, int previousResult, int coef)
     {
-        if (coef == 1)
+        //Console.WriteLine($"{previousResult}, {coef}");
+        if (coef == 1 && list.Count == 1)
+        {
+            return 0 - list[0];
+        }
+        else if (coef == 1)
         {
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
@@ -43,14 +53,19 @@ class App
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
             {
-                result -= list[i];
+                result += list[i];
             }
             return previousResult - result;
         }
     }
     public static int Multi(List<int> list, int previousResult, int coef)
     {
-        if (coef == 1)
+        //Console.WriteLine($"{previousResult}, {coef}");
+        if (coef == 1 && list.Count == 1)
+        {
+            return 0;
+        }
+        else if (coef == 1)
         {
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
@@ -71,7 +86,17 @@ class App
     }
     public static int Split(List<int> list, int previousResult, int coef)
     {
-        if (coef == 1)
+        //Console.WriteLine($"{previousResult}, {coef}");
+        if (coef == 1 && list.Count == 1)
+        {
+            if (list[0] == 0)
+            {
+                Console.WriteLine("На ноль делить нельзя!");
+                return 0;
+            }
+            return 0;
+        }
+        else if (coef == 1)
         {
             int result = list[0];
             for (int i = 1; i < list.Count; i++)
@@ -103,15 +128,7 @@ class App
                     result /= list[i];
                 }
             }
-            if (result == 0)
-            {
-                Console.WriteLine("На ноль делить нельзя!");
-                return -1;
-            }
-            else
-            {
-                return previousResult / result;
-            }
+            return previousResult / result;
         }
     }
 
@@ -135,9 +152,25 @@ class App
                 }
                 else if (IsOperation(str[i]))
                 {
-                    result = DoOperation(str[i], ListOfOperands, result, 1);
-                    ListOfOperands.Clear();
-                    operationFlag = 1;
+                    if (i == str.Length - 1)
+                    {
+                        result = DoOperation(str[i], ListOfOperands, result, firstEntering);
+                        ListOfOperands.Clear();
+                        operationFlag = 1;
+                        firstEntering = 0;
+                    }
+                    else if (str[i] == '-' && str[i + 1] != ' ') // для отрицательных чисел
+                    {
+                        operand += str[i];
+                        continue;
+                    }
+                    else
+                    {
+                        result = DoOperation(str[i], ListOfOperands, result, firstEntering);
+                        ListOfOperands.Clear();
+                        operationFlag = 1;
+                        firstEntering = 0;
+                    }
                 }
                 else if (operationFlag == 1)
                 {
@@ -149,9 +182,8 @@ class App
                     ListOfOperands.Add(Convert.ToInt32(operand));
                     operand = "";
                 }
-                firstEntering = 0;
             }
-            else
+            else // больше одной операции
             {
                 if (str[i] != ' ' && !IsOperation(str[i]))
                 {
@@ -159,9 +191,23 @@ class App
                 }
                 else if (IsOperation(str[i]))
                 {
-                    result = DoOperation(str[i], ListOfOperands, result, 0);
-                    ListOfOperands.Clear();
-                    operationFlag = 1;
+                    if (i == str.Length - 1)
+                    {
+                        result = DoOperation(str[i], ListOfOperands, result, 0);
+                        ListOfOperands.Clear();
+                        operationFlag = 1;
+                    }
+                    else if (str[i] == '-' && str[i + 1] != ' ')
+                    {
+                        operand += str[i];
+                        continue;
+                    }
+                    else
+                    {
+                        result = DoOperation(str[i], ListOfOperands, result, 0);
+                        ListOfOperands.Clear();
+                        operationFlag = 1;
+                    }
                 }
                 else if (operationFlag == 1)
                 {
@@ -173,7 +219,7 @@ class App
                     ListOfOperands.Add(Convert.ToInt32(operand));
                     operand = "";
                 }
-            }    
+            }
         }
         Console.WriteLine(result);
         return 0;
@@ -216,6 +262,5 @@ class App
         string exp = Console.ReadLine();
         Console.WriteLine("\nРезультат:\n");
         PostFixExpression(exp);
-        
     }
 }

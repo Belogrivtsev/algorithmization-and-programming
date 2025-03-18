@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Постфиксная запись выражения")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+522557e8312a978c58a5c534d4fdc3cf130271f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60581d35b39d935ecac56c829f2916bfc899b693")]
 [assembly: System.Reflection.AssemblyProductAttribute("Постфиксная запись выражения")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Постфиксная запись выражения")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

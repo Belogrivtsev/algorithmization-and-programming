@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\bin\Debug\net8.0\1 Использование HashSet.exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\bin\Debug\net8.0\1 Использование HashSet.deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\bin\Debug\net8.0\1 Использование HashSet.runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\bin\Debug\net8.0\1 Использование HashSet.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\bin\Debug\net8.0\1 Использование HashSet.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\refint\1 Использование HashSet.dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\1 Использование HashSet.genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab4 (1 задача со словарём и вторая с поствиксной записью)\1 Использование HashSet\1 Использование HashSet\obj\Debug\net8.0\ref\1 Использование HashSet.dll

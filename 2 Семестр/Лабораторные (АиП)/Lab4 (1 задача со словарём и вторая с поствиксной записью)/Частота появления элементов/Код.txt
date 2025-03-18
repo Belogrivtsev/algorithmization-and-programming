@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите список элементов через запятую:");
+        string input = Console.ReadLine();
+        string[] elements = input.Split(',').Select(i => i.Trim()).ToArray(); // обработка от запятых и пробелов
+        HashSet<string> resultList = new HashSet<string>(elements);
+
+        Dictionary<string, int> frequencies = new Dictionary<string, int>(); // string - элемент (ключ), int - сколько раз появился
+
+        foreach (string i in elements)
+        {
+            if (frequencies.ContainsKey(i))
+            {
+                frequencies[i]++;
+            }
+            else
+            {
+                frequencies[i] = 1;
+            }
+        }
+        Console.WriteLine("\n{Элемент} : {частота появления в списке}\n");
+        foreach (string i in resultList)
+        {
+            Console.WriteLine($"{i}: {frequencies[i]}");
+        }
+    }
+}

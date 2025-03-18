@@ -1,0 +1,20 @@
+using System;
+class App
+{
+    public static void Main()
+    {
+        Console.WriteLine("Введите список элементов через запятую:");
+        string input = Console.ReadLine();
+        string[] elements = input.Split(',').Select(i => i.Trim()).ToArray(); // обработка от запятых и пробелов
+        HashSet<string> resultList = new HashSet<string>(elements);
+
+        Console.WriteLine("\nЭлементы из которых состоит список:");
+
+        foreach (string i in resultList)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+    
+    
