@@ -1,0 +1,76 @@
+﻿using System;
+delegate int Operation(int a, int b);
+public class Calculator
+{
+    public int a { get; set; }
+    public int b { get; set; }
+    public Calculator(int A, int B)
+    {
+        a = A;
+        b = B;
+    }
+    public int Sum()
+    {
+        return a + b;
+    }
+    public int Dif()
+    {
+        return a - b;
+    }
+    public int Multi()
+    {
+        return a * b;
+    }
+    public int Split()
+    {
+        if (b == 0) { throw new DivideByZeroException("Нельзя делить на ноль"); }
+        else { return a / b; } // исключение для деления на 0
+    }
+}
+class App
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите 2 целых числа:");
+        var first = Convert.ToInt32(Console.ReadLine());
+        var second = Convert.ToInt32(Console.ReadLine());
+
+        Calculator obj1 = new Calculator(first, second);
+        Calculator obj2 = new Calculator(first, second);
+
+        Operation operation1 = (a, b) =>
+        {
+            Calculator result = new Calculator(a, b);
+            int sum = result.Sum();
+            result.a = sum;
+            int middle = result.Multi();
+            result.a = middle;
+            return result.Dif();
+        };
+
+        Operation operation2 = (a, b) =>
+        {
+            Calculator result = new Calculator(a, b);
+            int difference = result.Dif();
+            result.a = difference;
+            int middle = result.Split();
+            result.a = middle;
+            return result.Multi();
+        };
+
+
+        try // отлавливаем возможную ошибку
+        {
+            int result1 = operation1(obj1.a, obj1.b);
+            int result2 = operation2(obj2.a, obj2.b);
+            Console.WriteLine($"\nРезультат для первого делегата: {result1}");
+            Console.WriteLine($"\nРезультат для второго делегата: {result2}");
+        }
+        catch (DivideByZeroException error)
+        {
+            Console.WriteLine($"Ошибка: {error.Message}");
+        }
+
+
+    }
+}
