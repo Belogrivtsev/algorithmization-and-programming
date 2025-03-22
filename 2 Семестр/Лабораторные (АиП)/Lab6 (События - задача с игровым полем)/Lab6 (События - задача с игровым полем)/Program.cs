@@ -31,7 +31,7 @@ public class GameDot
             Random y = new Random();
             int xCoord = x.Next(fir.x - 3, sec.x + 3);
             int yCoord = y.Next(fou.y - 3, fir.y + 3);
-            Console.WriteLine($"Точка принла координаты ({xCoord},{yCoord})");
+            Console.WriteLine($"Точка приняла координаты ({xCoord},{yCoord})");
             mainDot.x = xCoord; mainDot.y = yCoord;
             if (IsEnd(fir, sec, thi, fou, mainDot))
             {
