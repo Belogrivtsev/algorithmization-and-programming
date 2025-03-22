@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+public class GameDot
+{
+    delegate void CheckEnd(int x, int y);
+    event CheckEnd OutOfGame;
+    public int x { get; set; }
+    public int y { get; set; }
+    public GameDot(int X, int Y)
+    {
+        x = X;
+        y = Y;
+    }
+    public static void OnOutOfGame(int x, int y)
+    {
+        Console.WriteLine($"Точка с координатами ({x}, {y}) вышла за пределы поля");
+    }
+    public static bool IsEnd(GameDot fir, GameDot sec, GameDot thi, GameDot fou, GameDot mainD) // метод для проверки вышла ли точка за пределы поля
+    {
+        if (mainD.x > sec.x || mainD.x < fir.x || mainD.y > fir.y || mainD.y < fou.y)
+        {
+            return true;
+        }
+        else { return false; }
+    }
+    public static void Game(GameDot fir, GameDot sec, GameDot thi, GameDot fou, GameDot mainDot)
+    {
+        while (true)
+        {
+            Random x = new Random();
+            Random y = new Random();
+            int xCoord = x.Next(fir.x - 3, sec.x + 3);
+            int yCoord = y.Next(fou.y - 3, fir.y + 3);
+            Console.WriteLine($"Точка принла координаты ({xCoord},{yCoord})");
+            mainDot.x = xCoord; mainDot.y = yCoord;
+            if (IsEnd(fir, sec, thi, fou, mainDot))
+            {
+                mainDot.OutOfGame?.Invoke(mainDot.x, mainDot.y); //Invoke - выполнение делегата 
+                Console.WriteLine("Игра окончена");
+                break;
+            }
+            Thread.Sleep(1000); // пауза между переходами точки
+            
+        }
+    }
+    public static void Main()
+    {
+        // игровое поле:
+        //    .1           .2
+        //    .4           .3 
+
+        Console.WriteLine($"Введите координаты 1 точки через запятую:");
+        string coordinates = Console.ReadLine();
+        string[] splitCoordinates = coordinates.Split(',').Select(e => e.Trim()).ToArray();
+        GameDot first = new GameDot(Convert.ToInt32(splitCoordinates[0]), Convert.ToInt32(splitCoordinates[1]));
+
+        Console.WriteLine($"Введите координаты 2 точки через запятую:");
+        coordinates = Console.ReadLine();
+        splitCoordinates = coordinates.Split(',').Select(e => e.Trim()).ToArray();
+        GameDot second = new GameDot(Convert.ToInt32(splitCoordinates[0]), Convert.ToInt32(splitCoordinates[1]));
+
+        Console.WriteLine($"Введите координаты 3 точки через запятую:");
+        coordinates = Console.ReadLine();
+        splitCoordinates = coordinates.Split(',').Select(e => e.Trim()).ToArray();
+        GameDot third = new GameDot(Convert.ToInt32(splitCoordinates[0]), Convert.ToInt32(splitCoordinates[1]));
+
+        Console.WriteLine($"Введите координаты 4 точки через запятую:");
+        coordinates = Console.ReadLine();
+        splitCoordinates = coordinates.Split(',').Select(e => e.Trim()).ToArray();
+        GameDot fourth = new GameDot(Convert.ToInt32(splitCoordinates[0]), Convert.ToInt32(splitCoordinates[1]));
+
+        // игра
+
+        GameDot mainDot = new GameDot(0, 0); 
+
+        mainDot.OutOfGame += OnOutOfGame; // будет вызываться, при возникновении события OutOfGame
+
+        Game(first, second, third, fourth, mainDot);
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lab6 (События - задача с игровым полем)/1.0.0": {
+        "runtime": {
+          "Lab6 (События - задача с игровым полем).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab6 (События - задача с игровым полем)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
