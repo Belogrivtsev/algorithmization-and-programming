@@ -1,0 +1,48 @@
+using System;
+class App
+{
+    delegate void Operation(int a, int b);
+    delegate void Checking(string str);
+    public static void Main()
+    {
+        // 1ое Задание:
+
+        Console.WriteLine("Введите первую переменную");
+        var a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите вторую переменную");
+        var b = Convert.ToInt32(Console.ReadLine());
+        Operation sum = (a, b) => { Console.WriteLine($"Сумма переменных: {a + b}"); };
+        sum(a, b);
+        Operation dif = (a, b) => { Console.WriteLine($"Разность переменных: {a - b}"); };
+        dif(a, b);
+        Operation multi = (a, b) => { Console.WriteLine($"Умножение переменных: {a * b}"); };
+        multi(a, b);
+        Operation split = (a, b) => { if (b == 0) Console.WriteLine("Ошибка: деление на ноль"); else { Console.WriteLine($"Деление переменных: {a / b}"); } };
+        split(a, b);
+
+        // 2ое Задание:
+
+        Console.WriteLine("\nВведите длину списка");
+        var n = Convert.ToInt32(Console.ReadLine());
+        List<string> list = new List<string>();
+        Console.WriteLine($"Вводите {n} строковых элементов");
+        for (int i = 0; i < n; i++)
+        {
+            list.Add(Convert.ToString(Console.ReadLine()));
+        }
+
+        Console.WriteLine("\nСлова, начинающиеся на букву а:\n");
+
+        for (int i = 0; i < list.Count; i++)
+        {
+            string str = list[i];
+            Checking Afirst = (str) => {
+                if (str[0] == 'a' || str[0] == 'A' || str[0] == 'а' || str[0] == 'А') // русская и английская проверка букв
+                {
+                    Console.WriteLine(str);
+                }
+            };
+            Afirst(str);
+        }
+    }
+}

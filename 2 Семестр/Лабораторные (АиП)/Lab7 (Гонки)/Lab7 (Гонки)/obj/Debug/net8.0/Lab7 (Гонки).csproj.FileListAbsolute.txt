@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\bin\Debug\net8.0\Lab7 (Гонки).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\bin\Debug\net8.0\Lab7 (Гонки).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\bin\Debug\net8.0\Lab7 (Гонки).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\bin\Debug\net8.0\Lab7 (Гонки).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\bin\Debug\net8.0\Lab7 (Гонки).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\refint\Lab7 (Гонки).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\Lab7 (Гонки).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab7 (Гонки)\Lab7 (Гонки)\obj\Debug\net8.0\ref\Lab7 (Гонки).dll
