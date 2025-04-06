@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Волновой алгоритм")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a44b9ee5038005e3b8c921f6cdf4afb40e856cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd772d325f3cc8def38ad3dda6ba1d81d241560f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Волновой алгоритм")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Волновой алгоритм")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
