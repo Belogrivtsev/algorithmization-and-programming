@@ -1,0 +1,196 @@
+using System;
+using System.Collections.Generic;
+
+public class LittleAlg
+{
+    private readonly int[,] _originalMatrix;
+    private readonly int _size;
+    private List<int> _bestPath;
+    private int _bestCost = int.MaxValue;
+
+    public LittleAlg(int[,] costMatrix)
+    {
+        _originalMatrix = (int[,])costMatrix.Clone();
+        _size = costMatrix.GetLength(0);
+    }
+
+    public (List<int> path, int cost) Solve()
+    {
+        _bestPath = new List<int>();
+        var currentPath = new List<int> {0};
+
+        var workingMatrix = (int[,])_originalMatrix.Clone();
+
+        int initialCost = ReduceMatrix(workingMatrix);
+
+        RightBranchOnly(workingMatrix, currentPath, initialCost);
+
+        if (_bestPath.Count > 0)
+        {
+            _bestPath.Add(_bestPath[0]);
+        }
+
+        return (_bestPath, _bestCost);
+    }
+
+    private void RightBranchOnly(int[,] matrix, List<int> path, int currentCost) // идём по правой ветке
+    {
+        if (path.Count == _size)
+        {
+            int returnCost = matrix[path[^1], path[0]];
+            if (returnCost != int.MaxValue)
+            {
+                int totalCost = currentCost + returnCost;
+                if (totalCost < _bestCost)
+                {
+                    _bestCost = totalCost;
+                    _bestPath = new List<int>(path);
+                }
+            }
+            return;
+        }
+
+        var reducedMatrix = (int[,])matrix.Clone();
+        int reductionCost = ReduceMatrix(reducedMatrix);
+        int lowerBound = currentCost + reductionCost;
+
+        if (lowerBound >= _bestCost)
+        {
+            return;
+        }
+
+        int lastCity = path[^1]; // идём с конца
+        for (int nextCity = 0; nextCity < _size; nextCity++)
+        {
+            if (reducedMatrix[lastCity, nextCity] != int.MaxValue && !path.Contains(nextCity))
+            {
+                var newMatrix = (int[,])reducedMatrix.Clone(); // исключаем обратный путь
+                
+                newMatrix[nextCity, lastCity] = int.MaxValue;
+                for (int k = 0; k < _size; k++)
+                {
+                    if (k != nextCity) newMatrix[lastCity, k] = int.MaxValue; // исключаем пути из текущей вершины
+                }
+
+                var newPath = new List<int>(path) { nextCity };
+                RightBranchOnly(newMatrix, newPath, currentCost + reductionCost + matrix[lastCity, nextCity]);
+            }
+        }
+    }
+
+    private int ReduceMatrix(int[,] matrix) // редуцирование матриц
+    {
+        int reductionCost = 0;
+
+        for (int i = 0; i < _size; i++)
+        {
+            if (IsRowExcluded(matrix, i)) continue;
+
+            int min = int.MaxValue;
+            for (int j = 0; j < _size; j++)
+            {
+                if (matrix[i, j] < min) min = matrix[i, j];
+            }
+
+            if (min != int.MaxValue && min != 0)
+            {
+                reductionCost += min;
+                for (int j = 0; j < _size; j++)
+                {
+                    if (matrix[i, j] != int.MaxValue)
+                        matrix[i, j] -= min;
+                }
+            }
+        }
+
+        for (int j = 0; j < _size; j++)
+        {
+            if (IsColumnExcluded(matrix, j)) continue;
+
+            int min = int.MaxValue;
+            for (int i = 0; i < _size; i++)
+            {
+                if (matrix[i, j] < min) min = matrix[i, j];
+            }
+
+            if (min != int.MaxValue && min != 0)
+            {
+                reductionCost += min;
+                for (int i = 0; i < _size; i++)
+                {
+                    if (matrix[i, j] != int.MaxValue)
+                        matrix[i, j] -= min;
+                }
+            }
+        }
+
+        return reductionCost;
+    }
+
+    private bool IsRowExcluded(int[,] matrix, int row)
+    {
+        for (int j = 0; j < _size; j++)
+            if (matrix[row, j] != int.MaxValue)
+                return false;
+        return true;
+    }
+
+    private bool IsColumnExcluded(int[,] matrix, int col)
+    {
+        for (int i = 0; i < _size; i++)
+            if (matrix[i, col] != int.MaxValue)
+                return false;
+        return true;
+    }
+}
+
+public class App
+{
+    public static void PrintMatrix(int[,] matrix, int INF)
+    {
+        int vertices = matrix.GetLength(0);
+
+        for (int i = 0; i < vertices; i++)
+        {
+            for (int j = 0; j < vertices; j++)
+            {
+                if (matrix[i, j] == int.MaxValue)
+                {
+                    Console.Write("INF ");
+                }
+                else
+                {
+                    Console.Write(matrix[i, j] + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public static void Main()
+    {
+        int INF = 999;
+        Console.WriteLine("Введите размер весовой матрицы:");
+        var n = Convert.ToInt32(Console.ReadLine());
+        int[,] TheWeightMatrix = new int[n, n];
+
+        Console.WriteLine("В процессе набора элементы строки 999 будет означать отсутствие пути между вершинами (бесконечность)");
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Введите элементы (вес рёбер) {i + 1} строки:");
+            for (int j = 0; j < n; j++)
+            {
+                var x = Convert.ToInt32(Console.ReadLine());
+                TheWeightMatrix[i, j] = x == 999 ? int.MaxValue : x;
+            }
+        }
+
+        PrintMatrix(TheWeightMatrix, INF);
+        var solver = new LittleAlg(TheWeightMatrix);
+        var (path, cost) = solver.Solve();
+
+        Console.WriteLine("Лучший найденный путь: " + string.Join(" -> ", path));
+        Console.WriteLine("Стоимость пути: " + cost);
+    }
+}

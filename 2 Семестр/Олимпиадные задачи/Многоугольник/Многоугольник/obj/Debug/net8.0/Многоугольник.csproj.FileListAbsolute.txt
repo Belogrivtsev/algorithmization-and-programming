@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\bin\Debug\net8.0\Многоугольник.exe
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\bin\Debug\net8.0\Многоугольник.deps.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\bin\Debug\net8.0\Многоугольник.runtimeconfig.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\bin\Debug\net8.0\Многоугольник.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\bin\Debug\net8.0\Многоугольник.pdb
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.sourcelink.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\refint\Многоугольник.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.pdb
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\Многоугольник.genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Многоугольник\Многоугольник\obj\Debug\net8.0\ref\Многоугольник.dll

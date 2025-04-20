@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\bin\Debug\net8.0\Lab10 (Структуры).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\bin\Debug\net8.0\Lab10 (Структуры).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\bin\Debug\net8.0\Lab10 (Структуры).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\bin\Debug\net8.0\Lab10 (Структуры).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\bin\Debug\net8.0\Lab10 (Структуры).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\refint\Lab10 (Структуры).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\Lab10 (Структуры).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab10 (Структуры)\Lab10 (Структуры)\obj\Debug\net8.0\ref\Lab10 (Структуры).dll

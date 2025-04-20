@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repositoriy\\2 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435 (\u0410\u0438\u041F)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95F6B9C6-6A08-4EDA-BD44-9E7CB3AD168D}|Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B).csproj|d:\\repositoriy\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435 (\u0430\u0438\u043F)\\lab10 (\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\lab10 (\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95F6B9C6-6A08-4EDA-BD44-9E7CB3AD168D}|Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B).csproj|solutionrelative:lab10 (\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repositoriy\\2 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435 (\u0410\u0438\u041F)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Program.cs",
+              "RelativeDocumentMoniker": "Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Program.cs",
+              "ToolTip": "D:\\Repositoriy\\2 \u0421\u0435\u043C\u0435\u0441\u0442\u0440\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435 (\u0410\u0438\u041F)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Program.cs",
+              "RelativeToolTip": "Lab10 (\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B)\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwv0oAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T04:04:56.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
