@@ -1,0 +1,158 @@
+﻿using System;
+
+class MobilePhone
+{
+    public string Number { get; set; }
+    public string ConnectionYear { get; set; }
+    public string Fio { get; set; }
+    public string Provider { get; set; }
+
+    public MobilePhone(string number,  string connectionYear, string fio, string provider)
+    {
+        Number = number;
+        ConnectionYear = connectionYear;
+        Fio = fio;
+        Provider = provider;
+    }
+}
+class App
+{
+    public static void FillBase(List<MobilePhone> list)
+    {
+        Console.WriteLine("Введите количество телефонов");
+        var n = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"Введите номер {i + 1} телефона");
+            string a = Console.ReadLine();
+            Console.WriteLine($"Введите год подключения {i + 1} телефона");
+            string b = Console.ReadLine();
+            Console.WriteLine($"Введите фио {i + 1} телефона");
+            string c = Console.ReadLine();
+            Console.WriteLine($"Введите оператор {i + 1} телефона");
+            string d = Console.ReadLine();
+            MobilePhone phone = new MobilePhone(a, b, c, d);
+            list.Add(phone);
+        }
+    }
+    public static void ConnectionYearGroup(List<MobilePhone> list)
+    {
+        if (list.Count == 0)
+        {
+            Console.WriteLine("База данных пуста!\n");
+            return;
+        }
+        var grouped = list.GroupBy(p => p.ConnectionYear).OrderBy(g => g.Key);
+
+        foreach (var group in grouped)
+        {
+            Console.WriteLine($"Год подключения: {group.Key}\n");
+            foreach (var phone in group)
+            {
+                Console.WriteLine($"  Номер: {phone.Number}, Оператор: {phone.Provider}, ФИО: {phone.Fio}\n");
+            }
+            Console.WriteLine();
+        }
+    }
+    public static void ProviderGroup(List<MobilePhone> list)
+    {
+        if (list.Count == 0)
+        {
+            Console.WriteLine("База данных пуста!\n");
+            return;
+        }
+        var grouped = list.GroupBy(p => p.Provider).OrderBy(g => g.Key);
+
+        foreach (var group in grouped)
+        {
+            Console.WriteLine($"Оператор: {group.Key}\n");
+            foreach (var phone in group)
+            {
+                Console.WriteLine($"Номер: {phone.Number}, Год подключения: {phone.ConnectionYear}, ФИО: {phone.Fio}\n");
+            }
+        }
+    }
+    public static void NumberSearch(List<MobilePhone> list)
+    {
+        if (list.Count == 0)
+        {
+            Console.WriteLine("База данных пуста!\n");
+            return;
+        }
+        Console.WriteLine("Введите телефон, по которому будет осуществляться выборка");
+        string ComparativeNumber = Console.ReadLine();
+        var searched = list.Where(p => p.Number.Contains(ComparativeNumber)).ToList();
+
+        if (searched.Count == 0)
+        {
+            Console.WriteLine("Ничего не найдено\n");
+            return;
+        }
+
+        Console.WriteLine("\nРезультаты поиска:\n");
+        foreach (var phone in searched)
+        {
+            Console.WriteLine($"Год подключения: {phone.ConnectionYear}, Оператор: {phone.Provider}, ФИО: {phone.Fio}\n");
+        }
+
+    }
+    public static void FioSearch(List<MobilePhone> phones)
+    {
+        if (phones.Count == 0)
+        {
+            Console.WriteLine("База данных пуста!\n");
+            return;
+        }
+
+        Console.WriteLine("Введите ФИО по которому будет осуществляться выборка");
+        string searchTerm = Console.ReadLine();
+
+        var results = phones.Where(p => p.Fio.Contains(searchTerm))
+                           .ToList();
+
+        if (results.Count == 0)
+        {
+            Console.WriteLine("Ничего не найдено\n");
+            return;
+        }
+
+        Console.WriteLine("Результаты поиска:\n");
+        foreach (var phone in results)
+        {
+            Console.WriteLine($"ФИО: {phone.Fio}, Номер: {phone.Number}, Год подключения: {phone.ConnectionYear}, Оператор: {phone.Provider}\n");
+        }
+    }
+    public static void Main()
+    {
+        List<MobilePhone> listOfPhones = new List<MobilePhone>();
+        while (true)
+        {
+            Console.WriteLine("Меню:\n 1. Группировка по дате подключения\n 2. Группировка по оператору связи\n 3. Поиск по номеру\n 4. Поиск по ФИО\n 5. Заполнение базы данных\n");
+            var choose = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            switch (choose)
+            {
+                case 1:
+                    ConnectionYearGroup(listOfPhones);
+                    break;
+                case 2:
+                    ProviderGroup(listOfPhones);
+                    break;
+                case 3:
+                    NumberSearch(listOfPhones);
+                    break;
+                case 4:
+                    FioSearch(listOfPhones);
+                    break;
+                case 5:
+                    FillBase(listOfPhones);
+                    break;
+                default:
+                    Console.WriteLine("Введено неизвестное действие");
+                    break;
+            }
+        }
+
+
+    }
+}

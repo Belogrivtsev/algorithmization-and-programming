@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\bin\Debug\net8.0\Lab11 (Работа с файлом).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\bin\Debug\net8.0\Lab11 (Работа с файлом).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\bin\Debug\net8.0\Lab11 (Работа с файлом).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\bin\Debug\net8.0\Lab11 (Работа с файлом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\bin\Debug\net8.0\Lab11 (Работа с файлом).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\refint\Lab11 (Работа с файлом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\Lab11 (Работа с файлом).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab11 (Работа с файлом)\Lab11 (Работа с файлом)\obj\Debug\net8.0\ref\Lab11 (Работа с файлом).dll
