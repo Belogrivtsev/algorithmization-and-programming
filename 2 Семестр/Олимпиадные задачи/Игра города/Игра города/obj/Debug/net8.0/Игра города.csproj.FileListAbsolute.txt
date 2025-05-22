@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\bin\Debug\net8.0\Игра города.exe
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\bin\Debug\net8.0\Игра города.deps.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\bin\Debug\net8.0\Игра города.runtimeconfig.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\bin\Debug\net8.0\Игра города.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\bin\Debug\net8.0\Игра города.pdb
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.sourcelink.json
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\refint\Игра города.dll
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.pdb
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\Игра города.genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Олимпиадные задачи\Игра города\Игра города\obj\Debug\net8.0\ref\Игра города.dll

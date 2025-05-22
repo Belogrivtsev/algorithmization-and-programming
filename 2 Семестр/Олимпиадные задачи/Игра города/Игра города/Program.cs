@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class App
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите количество городов");
+        var n = Convert.ToInt32(Console.ReadLine());
+        List<string> cities = new List<string>();
+        Console.WriteLine("Вводите города");
+        for (int i = 0; i < n; i++)
+        {
+            cities.Add(Console.ReadLine().Trim().ToLower());
+        }
+
+        List<List<string>> allChains = new List<List<string>>();
+        HashSet<int> usedIndices = new HashSet<int>();
+
+        while (usedIndices.Count < cities.Count)
+        {
+            for (int i = 0; i < cities.Count; i++) // перебор городов, которые будут началом з. цепочки
+            {
+                if (!usedIndices.Contains(i))
+                {
+                    List<string> currentChain = new List<string>();
+                    currentChain.Add(cities[i]);
+                    usedIndices.Add(i);
+
+                    bool chainFlag; // флажок для расширения цепочки
+                    do // построение цепочки
+                    {
+                        chainFlag = false;
+                        char lastChar = currentChain.Last().Last();
+
+                        for (int j = 0; j < cities.Count; j++)
+                        {
+                            if (!usedIndices.Contains(j) && cities[j][0] == lastChar)
+                            {
+                                currentChain.Add(cities[j]);
+                                usedIndices.Add(j);
+                                chainFlag = true;
+                                break;
+                            }
+                        }
+                    } while (chainFlag);
+
+                    if (currentChain.Count >= 2 && currentChain.First()[0] == currentChain.Last().Last()) // проверка цепочки на закольцованность
+                    {
+                        allChains.Add(currentChain);
+                    }
+                    else
+                    {
+                        foreach (var city in currentChain.Skip(1)) // возвращаем города, если не закольцована (первый оставляем)
+                        {
+                            int index = cities.IndexOf(city);
+                            usedIndices.Remove(index);
+                        }
+                    }
+                }
+            }
+        }
+
+        allChains.Sort((a, b) => b.Count.CompareTo(a.Count)); // сравнениен двух цепочек
+
+        Console.WriteLine($"Количество закольцованных цепочек равно {allChains.Count}");
+        Console.WriteLine("\nДлины закольцованных цепочпек:\n");
+        foreach (var chain in allChains)
+        {
+            Console.WriteLine(chain.Count);
+        }
+    }
+}

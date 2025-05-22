@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\bin\Debug\net8.0\Lab13 (Базы данных и LINQ).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\bin\Debug\net8.0\Lab13 (Базы данных и LINQ).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\bin\Debug\net8.0\Lab13 (Базы данных и LINQ).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\bin\Debug\net8.0\Lab13 (Базы данных и LINQ).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\bin\Debug\net8.0\Lab13 (Базы данных и LINQ).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\refint\Lab13 (Базы данных и LINQ).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\Lab13 (Базы данных и LINQ).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab13 (Базы данных и LINQ)\Lab13 (Базы данных и LINQ)\obj\Debug\net8.0\ref\Lab13 (Базы данных и LINQ).dll

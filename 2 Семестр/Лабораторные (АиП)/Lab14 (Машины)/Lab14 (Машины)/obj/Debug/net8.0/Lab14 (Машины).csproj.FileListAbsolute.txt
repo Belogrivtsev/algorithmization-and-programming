@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\bin\Debug\net8.0\Lab14 (Машины).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\bin\Debug\net8.0\Lab14 (Машины).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\bin\Debug\net8.0\Lab14 (Машины).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\bin\Debug\net8.0\Lab14 (Машины).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\bin\Debug\net8.0\Lab14 (Машины).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\refint\Lab14 (Машины).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\Lab14 (Машины).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab14 (Машины)\Lab14 (Машины)\obj\Debug\net8.0\ref\Lab14 (Машины).dll

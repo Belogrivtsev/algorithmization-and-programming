@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Расстояние между городами")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36db2aa167c38b55f2913181c242a45f817fe1e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f3447738c2c731d2b75908f94c80b4e3794f3b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Расстояние между городами")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Расстояние между городами")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "РГР Дискретная Математика/1.0.0": {
+        "runtime": {
+          "РГР Дискретная Математика.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "РГР Дискретная Математика/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
