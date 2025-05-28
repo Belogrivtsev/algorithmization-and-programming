@@ -1,0 +1,50 @@
+﻿using System;
+
+class App
+{
+    public static void Main()
+    {
+        string[] strings = new string[7];
+        Console.WriteLine("Вводите 7 строк:");
+        for (int i = 0; i < 7; i++)
+        {
+            string str = Console.ReadLine();
+            strings[i] = str;
+        } 
+        unsafe
+        {
+            string mainStr = "";
+            fixed (string* listStrs = strings)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    mainStr += listStrs[i];
+                }
+            }
+            List<char> elements = new List<char>();
+            for (int i = 0; i < mainStr.Length; i++)
+            {
+                elements.Add(mainStr[i]);
+            }
+            HashSet<char> result = new HashSet<char>(elements);
+            Dictionary<char, int> frequencies = new Dictionary<char, int>();
+
+            foreach (var i in mainStr)
+            {
+                if (frequencies.ContainsKey(i))
+                {
+                    frequencies[i]++;
+                }
+                else
+                {
+                    frequencies[i] = 1;
+                }
+            }
+            Console.WriteLine("\n{Элемент} : {частота появления в массиве}\n");
+            foreach (var i in result)
+            {
+                Console.WriteLine($"{i}: {frequencies[i]}");
+            }
+        }
+    }
+}

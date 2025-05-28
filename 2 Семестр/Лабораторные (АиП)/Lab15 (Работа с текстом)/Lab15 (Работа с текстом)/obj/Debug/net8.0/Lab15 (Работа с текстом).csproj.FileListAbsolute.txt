@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\bin\Debug\net8.0\Lab15 (Работа с текстом).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\bin\Debug\net8.0\Lab15 (Работа с текстом).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\bin\Debug\net8.0\Lab15 (Работа с текстом).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\bin\Debug\net8.0\Lab15 (Работа с текстом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\bin\Debug\net8.0\Lab15 (Работа с текстом).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\refint\Lab15 (Работа с текстом).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\Lab15 (Работа с текстом).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Работа с текстом)\Lab15 (Работа с текстом)\obj\Debug\net8.0\ref\Lab15 (Работа с текстом).dll

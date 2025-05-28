@@ -1,0 +1,15 @@
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\bin\Debug\net8.0\Lab15 (Бинарное дерево).exe
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\bin\Debug\net8.0\Lab15 (Бинарное дерево).deps.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\bin\Debug\net8.0\Lab15 (Бинарное дерево).runtimeconfig.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\bin\Debug\net8.0\Lab15 (Бинарное дерево).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\bin\Debug\net8.0\Lab15 (Бинарное дерево).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).AssemblyInfoInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).AssemblyInfo.cs
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).csproj.CoreCompileInputs.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).sourcelink.json
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\refint\Lab15 (Бинарное дерево).dll
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).pdb
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\Lab15 (Бинарное дерево).genruntimeconfig.cache
+D:\Repositoriy\2 Семестр\Лабораторные (АиП)\Lab15 (Бинарное дерево)\Lab15 (Бинарное дерево)\obj\Debug\net8.0\ref\Lab15 (Бинарное дерево).dll
