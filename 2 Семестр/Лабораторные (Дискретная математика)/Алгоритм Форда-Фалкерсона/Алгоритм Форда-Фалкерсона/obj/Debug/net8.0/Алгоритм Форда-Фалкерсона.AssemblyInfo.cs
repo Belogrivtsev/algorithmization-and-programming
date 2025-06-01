@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Lab15 (Бинарное дерево)")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Алгоритм Форда-Фалкерсона")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c24a9357fbe23bc939d259e61fad6c08acf5c526")]
-[assembly: System.Reflection.AssemblyProductAttribute("Lab15 (Бинарное дерево)")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Lab15 (Бинарное дерево)")]
+[assembly: System.Reflection.AssemblyProductAttribute("Алгоритм Форда-Фалкерсона")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Алгоритм Форда-Фалкерсона")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
